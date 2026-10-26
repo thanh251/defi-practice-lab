@@ -1,0 +1,14 @@
+node_modules/
+artifacts/
+cache/
+.env
+geth-data/
+.tools/
+deployments/*.json
+!deployments/.gitkeep
+coverage/
+
+.DS_Store
+.env.*
+!.env.example
+*.log

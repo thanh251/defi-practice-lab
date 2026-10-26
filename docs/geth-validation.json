@@ -1,0 +1,58 @@
+{
+  "verifiedDate": "2026-10-25",
+  "client": "Geth/v1.17.10-stable/darwin-arm64/go1.27.3",
+  "deployment": {
+    "chainId": "1337",
+    "genesisHash": "0x790ac206f4e9d3837e8284a6b81d69d832d6974d10735757ccad8ad35086d6ad",
+    "deployer": "0x71562b71999873DB5b286dF957af199Ec94617F7",
+    "tokens": {
+      "A": "0x3A220f351252089D385b29beca14e27F204c296A",
+      "B": "0x537e697c7AB75A26f9ECF0Ce810e3154dFcaaf44",
+      "C": "0x3Dc2cd8F2E345951508427872d8ac9f635fBe0EC",
+      "D": "0xD91Fb8750Ea1decEf4cEE9D8314f4a60DE039457"
+    },
+    "weth": "0x2F415f51FD16900fc1F92943B1F9A07F1b7EEa14",
+    "factory": "0x82567a6F6E3AbE246F62350322a07Af7F413cFe6",
+    "router": "0xcf950f044E11D2E0318314ecd940ec19abf51130",
+    "factory2": "0xE654a1bfC5D17402681dAf37ACFb82da53b2258A",
+    "router2": "0xBcDfc870Ea0C6463C6EBb2B2217a4b32B93BCFB7",
+    "aave": {
+      "provider": "0x7c8024C9eb17A3908444F0DCe2Ec6B1eEf735Fa3",
+      "pool": "0x9690f9ecBE462f67Aab778b75712ac16110a0257",
+      "configurator": "0x1330806565F4432eb4Df5Df014248915CBF5d5cB",
+      "oracle": "0xF0462aeE2f6195068ddC59099b091c68a1FA5B74",
+      "aToken": "0x96543324b3391ae5da419b56a2D1979FDcc4194E",
+      "libraries": {
+        "contracts/protocol/libraries/logic/BorrowLogic.sol:BorrowLogic": "0x2E541AAd60518191AA45cafbA4E68206a6c34E5D",
+        "contracts/protocol/libraries/logic/BridgeLogic.sol:BridgeLogic": "0x2d13eec32a0AF16A5211A4f8E706bC79f730abde",
+        "contracts/protocol/libraries/logic/EModeLogic.sol:EModeLogic": "0x920fD5070602FeAEa2e251e9e7238b6c376bcaE5",
+        "contracts/protocol/libraries/logic/FlashLoanLogic.sol:FlashLoanLogic": "0x8c1094d088E2E2B62263326e2D88Ce512327CB3c",
+        "contracts/protocol/libraries/logic/LiquidationLogic.sol:LiquidationLogic": "0x3CB5b6E26e0f37F2514D45641F15Bd6fEC2E0c4c",
+        "contracts/protocol/libraries/logic/PoolLogic.sol:PoolLogic": "0xBAdc777C579B497EdE07fa6FF93bdF4E31793F24",
+        "contracts/protocol/libraries/logic/SupplyLogic.sol:SupplyLogic": "0x90Ea96DBA5bbbb4D2F798C47FE23453054c0FAB4",
+        "contracts/protocol/libraries/logic/ConfiguratorLogic.sol:ConfiguratorLogic": "0xAd271B210f336Ee377c220DB1Afcdf44d23270eE"
+      }
+    },
+    "receiver": "0x4aD517671a7E7421FDd7FbCB399ecD393a973c60"
+  },
+  "transactions": {
+    "directSwap": {
+      "hash": "0x6117e51424cea0af10402803a361085a9262e5518ce9e0c18d9cccc78f9e6467",
+      "blockNumber": 64,
+      "status": 1,
+      "gasUsed": "346323"
+    },
+    "multiHopSwap": {
+      "hash": "0x0b7bb1c11a5a006059e852db65d9a54eac6d0e63c8d8017b4e375e406461c4e1",
+      "blockNumber": 66,
+      "status": 1,
+      "gasUsed": "726872"
+    },
+    "flashLoan": {
+      "hash": "0x2020e3fb731bb3e6add47891771212b418b9af7f67473cc0929a1f8f83f4678e",
+      "blockNumber": 68,
+      "status": 1,
+      "gasUsed": "726305"
+    }
+  }
+}
