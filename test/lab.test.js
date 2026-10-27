@@ -91,7 +91,7 @@ describe('Actual Uniswap V2 + Aave V3 integration',function(){
 });
 describe('Routing boundaries',()=>{
   it('rounds integer output down and rejects unusable liquidity',()=>{
-    expect(amountOut(100n,1000n,1000n)).eq(90n);
+    expect(amountOut(100n,1000n,1000n)).eq(82n);
     expect(amountOut(100n,0n,1000n)).eq(0n);
     expect(findRoutes(new Map(),'A','D',100n,3)).deep.eq([]);
     expect(()=>findRoutes(new Map(),'A','D',100n,0)).throws('maxHops');

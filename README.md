@@ -8,6 +8,7 @@ Yêu cầu: Node.js 22 LTS trở lên, npm. Đã kiểm chứng trên macOS arm6
 
 ```bash
 npm ci
+npm run verify:vendor
 npm test
 npm run demo
 ```
@@ -47,11 +48,13 @@ Giữ `PRIVATE_KEY` trống khi dùng tài khoản developer Geth. Khi dùng ví
 
 Deployment lưu ở `deployments/1337.json` (chain ID thực tế được đọc từ node). File chứa token, hai Factory/Router, WETH, Aave provider/Pool/configurator/oracle/aToken, các library và receiver.
 
-Nếu đã deploy, script sẽ dừng để tránh vô tình tạo thêm một bộ contract. Muốn tạo bộ mới:
+Trên Geth/Hardhat local, mỗi lần chạy lệnh sau sẽ tự build và deploy một bộ mới, không cần `REDEPLOY=true`:
 
 ```bash
-REDEPLOY=true npm run deploy
+npm run deploy
 ```
+
+Sau khi toàn bộ deployment thành công, script giữ đúng một bản địa chỉ trước đó ở `deployments/1337-backup.json` (hoặc `31337-backup.json`), thay các backup timestamp cũ của cùng chain, rồi cập nhật manifest đang dùng. Nếu deployment thất bại trước bước lưu, file địa chỉ đang dùng được giữ nguyên. Nếu deploy lại public testnet đã có manifest, vẫn cần `REDEPLOY=true` và `ALLOW_TESTNET=true`.
 
 Các địa chỉ cũ vẫn tồn tại trên chain; file manifest sẽ trỏ sang bộ mới. Sau khi restart/reset node, chạy `status` để kiểm tra. Nếu chain đã bị reset, deploy lại. CLI kiểm tra genesis và sự tồn tại bytecode tại các địa chỉ chính trước khi tương tác.
 
@@ -109,7 +112,7 @@ CLI tự đọc decimals, approve đầu vào nếu cần, lấy báo giá mới
 `lib/routes.js` đọc các Pair và reserves tại cùng một block, xây đồ thị hai chiều rồi DFS các đường không lặp token. Mỗi chặng tính bằng số nguyên:
 
 ```text
-out = floor(in * 997 * reserveOut / (reserveIn * 1000 + in * 997))
+out = floor(in * 900 * reserveOut / (reserveIn * 1000 + in * 900))
 ```
 
 Kết quả xếp giảm dần theo output; nếu bằng nhau thì ưu tiên ít chặng hơn. Giới hạn cho phép 1–6 chặng. Đây là đường tốt nhất trong các đường đơn của **một Factory**, không chia lệnh qua nhiều route và chưa trừ gas. Đường tốt nhất có thể thay đổi theo số tiền và reserve.
@@ -118,7 +121,7 @@ Kết quả xếp giảm dần theo output; nếu bằng nhau thì ưu tiên ít
 
 ## 5. Aave được deploy như thế nào?
 
-Dùng artifact chính thức từ `@aave/core-v3@1.19.3`, không dùng MockPool. Script thực hiện:
+Dùng artifact chính thức Aave core-v3 1.19.3 được lưu tại `vendor/artifacts/aave-v3/`, không dùng MockPool. Source Solidity tương ứng ở `vendor/solidity/aave-v3/`. Script thực hiện:
 
 1. Deploy `PoolAddressesProvider` và `ACLManager`, cấp quyền pool admin.
 2. Deploy và link các thư viện logic cần thiết.
@@ -169,27 +172,58 @@ Chênh lệch giá được tạo có chủ đích để demo. Số profit in ra
 ```text
 contracts/LabToken.sol            ERC-20 cho lab, mint chỉ owner
 contracts/FlashSwapReceiver.sol   Vay Aave + swap hai DEX
-lib/artifacts.js                  Đọc artifact, deploy và tự link thư viện Aave
+vendor/solidity/                  Source Uniswap, Aave và OpenZeppelin trong project
+vendor/artifacts/                 ABI/bytecode giao thức chính thức đã cố định
+vendor/manifest.json              Nguồn gốc, phiên bản và SHA-256
+lib/artifacts.js                  Đọc artifact local, deploy và link thư viện Aave
 lib/deploy.js                     Dựng toàn bộ thị trường
+lib/deployment-store.js           Lưu manifest và xoay một backup sau deployment thành công
 lib/routes.js                     Snapshot đồ thị và tìm route
 scripts/deploy.js                 Deploy qua RPC, lưu manifest
 scripts/cli.js                    Status, quote, swap, route, flash
 scripts/demo.js                   Demo trọn luồng trên EVM tạm thời
 scripts/geth.sh                   Khởi động Geth local
+scripts/verify-vendor.js          Kiểm tra hash và import Solidity local
+scripts/compile-uniswap.js        Build core/periphery và cập nhật Pair hash
 test/lab.test.js                 Kiểm thử tích hợp và routing
 ```
 
-Uniswap dùng artifact chính thức của core `1.0.1` và periphery `1.1.0-beta.0` để giữ init code hash Pair tương thích với Router. Contract riêng biên dịch bằng solc 0.8.24 cài trong npm; không cần tải compiler khi compile. Không trộn API ethers v5 của tutorial cũ với ethers v6 trong project.
+Uniswap V2 hiện dùng source local trong `vendor/solidity/`, đã đổi phí swap thành **10%** (Pair trừ 100/1000, Library dùng 900/1000; backend tự đọc hệ số từ manifest build). Artifact được build tại chỗ bằng solc 0.5.16 cho core và 0.6.6 cho periphery. Script tự tính Pair init code hash mới và cập nhật `UniswapV2Library.pairFor()` trước khi build Router. Aave vẫn dùng artifact chính thức đã khóa phiên bản; phí flash loan lab giữ **0,05%**.
+
+```bash
+# Build lại giao thức Uniswap local và cập nhật artifact/hash
+npm run compile:uniswap
+
+# Build Uniswap rồi compile contract ứng dụng
+npm run compile
+
+# Kiểm tra snapshot, source và import
+npm run verify:vendor
+```
+
+`npm run deploy`, `npm test` và `npm run demo` tự chạy bước build Uniswap trước khi thực hiện. Khi sửa phí, phải đồng bộ hai phép trừ trong Pair và hai công thức quote của Library; script dừng nếu các hệ số không khớp. Backend tự đọc hệ số mới từ `vendor/manifest.json` sau build, không cần sửa số trong `lib/routes.js`. Các test có giá trị kỳ vọng theo phí 10% cũng cần được cập nhật nếu thay đổi mức phí lần nữa.
+
+Sửa source **Aave** vẫn yêu cầu rebuild artifact Aave bằng compiler/cấu hình phù hợp; pipeline tự động mới chỉ dành cho Uniswap. Xem [vendor/README.md](vendor/README.md) để biết nguồn và license.
 
 ## 8. Testnet
 
 Mặc định ưu tiên local. Muốn tự deploy trên testnet có đủ ngân sách gas, đặt `RPC_URL`, `PRIVATE_KEY` và `ALLOW_TESTNET=true` trong `.env`, rồi chạy `npm run deploy`. Đọc chain ID từ RPC; script từ chối chain ID 1. Bộ contract Aave cần nhiều transaction, nên phải có đủ ETH testnet. Project chưa được kiểm chứng trên public testnet.
 
+## Kiểm tra contract đang dùng có khớp bản build không
+
+Giữ Geth/node local đang chạy, sau đó:
+
+```bash
+npm run verify:deployment
+```
+
+Lệnh đọc cùng manifest mà CLI dùng, kiểm tra source Uniswap chưa đổi sau build, Factory/Pair trên chain khớp bytecode artifact hiện tại, Router trỏ đúng Factory/WETH và Receiver trỏ đúng hai Router. Nó in địa chỉ và `KHOP BYTECODE` khi khớp; thoát với mã lỗi khi không khớp hoặc không kết nối được node. Không gửi transaction, không tự compile/deploy lại. Phạm vi kiểm tra bytecode là Factory/Pair Uniswap; các quan hệ Router/Receiver được kiểm tra qua getter, không xác nhận toàn bộ bytecode Aave/Receiver. Hai deployment khác địa chỉ nhưng cùng bytecode đều có thể khớp: kết quả chứng minh khớp bản build, không chứng minh lần deploy nào có thời gian mới nhất.
+
 ## 9. Kiểm thử và giới hạn
 
 `npm test` bao gồm: khớp Factory/Router, supply Aave, swap trực tiếp/ba chặng, số sự kiện swap, slippage revert, báo giá route khớp Router, flash loan trả phí, rollback cả Aave/DEX khi thiếu lãi, bảo toàn vốn có sẵn, quyền gọi, callback giả và vay vượt thanh khoản.
 
-Kết quả kiểm chứng Geth nằm trong `docs/VALIDATION.md`. Source và lockfile dành cho thực hành. Các package giao thức V2/V3 là phiên bản cũ có chủ đích; toolchain Hardhat 2 còn dependency có advisory trong `npm audit`. Không dùng project này làm cấu hình production.
+Kết quả kiểm chứng Geth nằm trong `docs/VALIDATION.md`. Source và lockfile dành cho thực hành. Các snapshot giao thức V2/V3 là phiên bản cũ có chủ đích; toolchain Hardhat 2 còn dependency có advisory trong `npm audit`. Không dùng project này làm cấu hình production.
 
 ## Tài liệu gốc
 

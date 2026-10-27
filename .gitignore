@@ -1,5 +1,5 @@
 node_modules/
-artifacts/
+/artifacts/
 cache/
 .env
 geth-data/
@@ -12,3 +12,5 @@ coverage/
 .env.*
 !.env.example
 *.log
+
+deployments/*.tmp

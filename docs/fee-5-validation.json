@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-27",
+  "chainId": "1337",
+  "router": "0x6F72e0c2A9F8fc92D2CfEaf2414EDc14878c11Ce",
+  "pair": "0x4628525766E87ad9c9E29eDE251623784e651B06",
+  "pairRuntimeCodeHash": "0x44bee7bb9acadb9614f86d23b6630041626ef69da4dcb509942c99a09db48f22",
+  "swapFeePercent": 5,
+  "input": "10 A",
+  "quotedOutput": "9.490983565612667965 B",
+  "manifest": "deployments/1337.json",
+  "transactions": {
+    "swap": {
+      "hash": "0x130c40145cac3b06fc31b47fd6f10172964e77f40d2526ea3ded921b0abced5e",
+      "status": 1,
+      "block": 196,
+      "gasUsed": "347438"
+    },
+    "flash": {
+      "hash": "0xa11bdc706bc39e61cd0c9f25183b0c03a57dc3a03c0c4f05d166d9912a3e2f54",
+      "status": 1,
+      "block": 197,
+      "gasUsed": "728395"
+    }
+  },
+  "flashResult": {
+    "borrowedA": "100",
+    "premiumA": "0.05",
+    "profitBeforeGasA": "32.607514139294407543"
+  }
+}

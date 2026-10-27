@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
-import '@openzeppelin/contracts/access/Ownable.sol';
-import '@openzeppelin/contracts/security/ReentrancyGuard.sol';
-import '@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol';
-import '@aave/core-v3/contracts/flashloan/base/FlashLoanSimpleReceiverBase.sol';
+import '../vendor/solidity/openzeppelin/access/Ownable.sol';
+import '../vendor/solidity/openzeppelin/security/ReentrancyGuard.sol';
+import '../vendor/solidity/openzeppelin/token/ERC20/utils/SafeERC20.sol';
+import '../vendor/solidity/aave-v3/flashloan/base/FlashLoanSimpleReceiverBase.sol';
 interface IV2Router {
     function swapExactTokensForTokens(uint256,uint256,address[] calldata,address,uint256) external returns (uint256[] memory);
 }

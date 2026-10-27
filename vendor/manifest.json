@@ -1,0 +1,1940 @@
+{
+  "description": "Pinned protocol sources and official precompiled artifacts. Imports are relocated to local relative paths; protocol logic is unchanged.",
+  "packages": {
+    "@aave/core-v3": {
+      "version": "1.19.3",
+      "license": "BUSL-1.1",
+      "directory": "vendor/solidity/aave-v3"
+    },
+    "@openzeppelin/contracts": {
+      "version": "4.9.6",
+      "license": "MIT",
+      "directory": "vendor/solidity/openzeppelin"
+    },
+    "@uniswap/v2-core": {
+      "version": "1.0.1",
+      "license": "GPL-3.0-or-later",
+      "directory": "vendor/solidity/uniswap-v2-core"
+    },
+    "@uniswap/v2-periphery": {
+      "version": "1.1.0-beta.0",
+      "license": "GPL-3.0-or-later",
+      "directory": "vendor/solidity/uniswap-v2-periphery"
+    },
+    "@uniswap/lib": {
+      "version": "1.1.1",
+      "license": "GPL-3.0-or-later",
+      "directory": "vendor/solidity/uniswap-lib"
+    }
+  },
+  "sources": {
+    "vendor/solidity/aave-v3/mocks/oracle/PriceOracle.sol": {
+      "upstream": "@aave/core-v3/contracts/mocks/oracle/PriceOracle.sol",
+      "upstreamSha256": "f71b0f0fd8144bb4bba91d3cdcf7d6e31c8f29176063c347fc254d2f8ebb81f5",
+      "sha256": "f71b0f0fd8144bb4bba91d3cdcf7d6e31c8f29176063c347fc254d2f8ebb81f5"
+    },
+    "vendor/solidity/aave-v3/mocks/oracle/SequencerOracle.sol": {
+      "upstream": "@aave/core-v3/contracts/mocks/oracle/SequencerOracle.sol",
+      "upstreamSha256": "dc553d09264784545945a745e564476ba3fab388678e89c739536ba712408f16",
+      "sha256": "dc553d09264784545945a745e564476ba3fab388678e89c739536ba712408f16"
+    },
+    "vendor/solidity/aave-v3/mocks/oracle/CLAggregators/MockAggregator.sol": {
+      "upstream": "@aave/core-v3/contracts/mocks/oracle/CLAggregators/MockAggregator.sol",
+      "upstreamSha256": "0b0a53ef65b7bac9209c4e305b9dca9c15b2de9b19611c94f3c1cc10b3a53617",
+      "sha256": "0b0a53ef65b7bac9209c4e305b9dca9c15b2de9b19611c94f3c1cc10b3a53617"
+    },
+    "vendor/solidity/aave-v3/mocks/flashloan/MockFlashLoanReceiver.sol": {
+      "upstream": "@aave/core-v3/contracts/mocks/flashloan/MockFlashLoanReceiver.sol",
+      "upstreamSha256": "64382114f9c1bed24448d9e136492487cd4fe0f40b6eddf458225e75049f69ed",
+      "sha256": "64382114f9c1bed24448d9e136492487cd4fe0f40b6eddf458225e75049f69ed"
+    },
+    "vendor/solidity/aave-v3/mocks/flashloan/MockSimpleFlashLoanReceiver.sol": {
+      "upstream": "@aave/core-v3/contracts/mocks/flashloan/MockSimpleFlashLoanReceiver.sol",
+      "upstreamSha256": "61bcea0200920618ac27a96bc3dd0d8c2eb6f65eb0e27c5f46cf6be029ddaf0e",
+      "sha256": "61bcea0200920618ac27a96bc3dd0d8c2eb6f65eb0e27c5f46cf6be029ddaf0e"
+    },
+    "vendor/solidity/aave-v3/mocks/tests/MockReserveInterestRateStrategy.sol": {
+      "upstream": "@aave/core-v3/contracts/mocks/tests/MockReserveInterestRateStrategy.sol",
+      "upstreamSha256": "681e85d7261cd974d2771316767295a9272be85721ba212accddc26be0d11bf3",
+      "sha256": "681e85d7261cd974d2771316767295a9272be85721ba212accddc26be0d11bf3"
+    },
+    "vendor/solidity/aave-v3/mocks/tests/FlashloanAttacker.sol": {
+      "upstream": "@aave/core-v3/contracts/mocks/tests/FlashloanAttacker.sol",
+      "upstreamSha256": "67d7c04efcb2f2ce1633e919e0c18d6895edc42854fbf17d3cc00b886550cbb6",
+      "sha256": "67d7c04efcb2f2ce1633e919e0c18d6895edc42854fbf17d3cc00b886550cbb6"
+    },
+    "vendor/solidity/aave-v3/mocks/tests/WadRayMathWrapper.sol": {
+      "upstream": "@aave/core-v3/contracts/mocks/tests/WadRayMathWrapper.sol",
+      "upstreamSha256": "607398837ff1c293cd8075649b29009b9f7d44457b0a6e1fd379f6d5d9480777",
+      "sha256": "607398837ff1c293cd8075649b29009b9f7d44457b0a6e1fd379f6d5d9480777"
+    },
+    "vendor/solidity/aave-v3/mocks/tokens/MockATokenRepayment.sol": {
+      "upstream": "@aave/core-v3/contracts/mocks/tokens/MockATokenRepayment.sol",
+      "upstreamSha256": "6a4dfb08a592a86c3be88cf305aa5b179920f193ec6770f5c73ecd0481a0ec70",
+      "sha256": "6a4dfb08a592a86c3be88cf305aa5b179920f193ec6770f5c73ecd0481a0ec70"
+    },
+    "vendor/solidity/aave-v3/mocks/tokens/WETH9Mocked.sol": {
+      "upstream": "@aave/core-v3/contracts/mocks/tokens/WETH9Mocked.sol",
+      "upstreamSha256": "ff53fd80e3acc7628cfe42ce11acee324755cc6c24cdc6d1ab2d1721d25f7192",
+      "sha256": "ff53fd80e3acc7628cfe42ce11acee324755cc6c24cdc6d1ab2d1721d25f7192"
+    },
+    "vendor/solidity/aave-v3/mocks/tokens/MintableDelegationERC20.sol": {
+      "upstream": "@aave/core-v3/contracts/mocks/tokens/MintableDelegationERC20.sol",
+      "upstreamSha256": "256fca4f4de1a3b10304194b303192059cafa21bdf22fb81425bd65fc15c5906",
+      "sha256": "256fca4f4de1a3b10304194b303192059cafa21bdf22fb81425bd65fc15c5906"
+    },
+    "vendor/solidity/aave-v3/mocks/tokens/MintableERC20.sol": {
+      "upstream": "@aave/core-v3/contracts/mocks/tokens/MintableERC20.sol",
+      "upstreamSha256": "633fb42dcba0acace5e57bb117375ddbafa67cfff2282598938a2e58a23a3488",
+      "sha256": "633fb42dcba0acace5e57bb117375ddbafa67cfff2282598938a2e58a23a3488"
+    },
+    "vendor/solidity/aave-v3/mocks/helpers/MockIncentivesController.sol": {
+      "upstream": "@aave/core-v3/contracts/mocks/helpers/MockIncentivesController.sol",
+      "upstreamSha256": "9e62b900c9b80d11abd55d2af271ab9886f8f9b8e99d70007386004afb8e9df2",
+      "sha256": "9e62b900c9b80d11abd55d2af271ab9886f8f9b8e99d70007386004afb8e9df2"
+    },
+    "vendor/solidity/aave-v3/mocks/helpers/MockPeripheryContract.sol": {
+      "upstream": "@aave/core-v3/contracts/mocks/helpers/MockPeripheryContract.sol",
+      "upstreamSha256": "968fd42357eb2cd2497984653294db5b113c7e828dc5ac539896ee2b28fbb8fe",
+      "sha256": "968fd42357eb2cd2497984653294db5b113c7e828dc5ac539896ee2b28fbb8fe"
+    },
+    "vendor/solidity/aave-v3/mocks/helpers/MockReserveConfiguration.sol": {
+      "upstream": "@aave/core-v3/contracts/mocks/helpers/MockReserveConfiguration.sol",
+      "upstreamSha256": "48e1c0d67b6f048a690e339808ab45f1af00d0bf0829b03847c7255b2c957347",
+      "sha256": "48e1c0d67b6f048a690e339808ab45f1af00d0bf0829b03847c7255b2c957347"
+    },
+    "vendor/solidity/aave-v3/mocks/helpers/MockPool.sol": {
+      "upstream": "@aave/core-v3/contracts/mocks/helpers/MockPool.sol",
+      "upstreamSha256": "317736cfff69ce74a09e09362f6ae4d888a6188f662dbedc53df039c8c39713b",
+      "sha256": "317736cfff69ce74a09e09362f6ae4d888a6188f662dbedc53df039c8c39713b"
+    },
+    "vendor/solidity/aave-v3/mocks/helpers/SelfDestructTransfer.sol": {
+      "upstream": "@aave/core-v3/contracts/mocks/helpers/SelfDestructTransfer.sol",
+      "upstreamSha256": "595b170d76cb40b2df58d4d597d6309dcfc2c1984c9168b098b0c06f7d00f518",
+      "sha256": "595b170d76cb40b2df58d4d597d6309dcfc2c1984c9168b098b0c06f7d00f518"
+    },
+    "vendor/solidity/aave-v3/mocks/helpers/MockL2Pool.sol": {
+      "upstream": "@aave/core-v3/contracts/mocks/helpers/MockL2Pool.sol",
+      "upstreamSha256": "7e920b6dc22e6e8c8c6afcd2b4b7893e45f0716d385f40832c853078a05452fb",
+      "sha256": "7e920b6dc22e6e8c8c6afcd2b4b7893e45f0716d385f40832c853078a05452fb"
+    },
+    "vendor/solidity/aave-v3/mocks/upgradeability/MockStableDebtToken.sol": {
+      "upstream": "@aave/core-v3/contracts/mocks/upgradeability/MockStableDebtToken.sol",
+      "upstreamSha256": "9f257069454f9e1133fe5a29c478747a05117f9866a8975f509c98954eea8858",
+      "sha256": "9f257069454f9e1133fe5a29c478747a05117f9866a8975f509c98954eea8858"
+    },
+    "vendor/solidity/aave-v3/mocks/upgradeability/MockAToken.sol": {
+      "upstream": "@aave/core-v3/contracts/mocks/upgradeability/MockAToken.sol",
+      "upstreamSha256": "5e8c8f3b5fca806d8445f49225d37d62b8d21e692225e4010098764c4987b79a",
+      "sha256": "5e8c8f3b5fca806d8445f49225d37d62b8d21e692225e4010098764c4987b79a"
+    },
+    "vendor/solidity/aave-v3/mocks/upgradeability/MockInitializableImplementation.sol": {
+      "upstream": "@aave/core-v3/contracts/mocks/upgradeability/MockInitializableImplementation.sol",
+      "upstreamSha256": "1b33f16d379d8f6ebb45a7166d61d0140862f173982699938613b49e748d249b",
+      "sha256": "1b33f16d379d8f6ebb45a7166d61d0140862f173982699938613b49e748d249b"
+    },
+    "vendor/solidity/aave-v3/mocks/upgradeability/MockVariableDebtToken.sol": {
+      "upstream": "@aave/core-v3/contracts/mocks/upgradeability/MockVariableDebtToken.sol",
+      "upstreamSha256": "65cf73667f3251bb358079324128c400dee8865d3dbe586b28fb156692c21522",
+      "sha256": "65cf73667f3251bb358079324128c400dee8865d3dbe586b28fb156692c21522"
+    },
+    "vendor/solidity/aave-v3/misc/AaveProtocolDataProvider.sol": {
+      "upstream": "@aave/core-v3/contracts/misc/AaveProtocolDataProvider.sol",
+      "upstreamSha256": "dddfbbed45ab92b51b6cdd6f285acb48069378ac62eff0632e62f76a24221565",
+      "sha256": "dddfbbed45ab92b51b6cdd6f285acb48069378ac62eff0632e62f76a24221565"
+    },
+    "vendor/solidity/aave-v3/misc/AaveOracle.sol": {
+      "upstream": "@aave/core-v3/contracts/misc/AaveOracle.sol",
+      "upstreamSha256": "e41aeccc496f8d751017c8a9832022414cd022d92313eaf63926a37369994564",
+      "sha256": "e41aeccc496f8d751017c8a9832022414cd022d92313eaf63926a37369994564"
+    },
+    "vendor/solidity/aave-v3/misc/ZeroReserveInterestRateStrategy.sol": {
+      "upstream": "@aave/core-v3/contracts/misc/ZeroReserveInterestRateStrategy.sol",
+      "upstreamSha256": "4824f588dd4203de29c7ae11d5a56beeb0edd032f97f678936bc30918e8d1e0f",
+      "sha256": "4824f588dd4203de29c7ae11d5a56beeb0edd032f97f678936bc30918e8d1e0f"
+    },
+    "vendor/solidity/aave-v3/misc/L2Encoder.sol": {
+      "upstream": "@aave/core-v3/contracts/misc/L2Encoder.sol",
+      "upstreamSha256": "d219c4320285e70aa893a2c06488a259f71e629a72810643de16beb0dd7876f2",
+      "sha256": "d219c4320285e70aa893a2c06488a259f71e629a72810643de16beb0dd7876f2"
+    },
+    "vendor/solidity/aave-v3/misc/interfaces/IWETH.sol": {
+      "upstream": "@aave/core-v3/contracts/misc/interfaces/IWETH.sol",
+      "upstreamSha256": "1111aa202fa9131f2a74ab5d601fd1228a7eb2229c32e083e52c89c94fe3c8eb",
+      "sha256": "1111aa202fa9131f2a74ab5d601fd1228a7eb2229c32e083e52c89c94fe3c8eb"
+    },
+    "vendor/solidity/aave-v3/flashloan/base/FlashLoanSimpleReceiverBase.sol": {
+      "upstream": "@aave/core-v3/contracts/flashloan/base/FlashLoanSimpleReceiverBase.sol",
+      "upstreamSha256": "c28b48c082cda842cb78af8950839d0f2e3be5b0c9f5064c49eb8b6d3ea25dcc",
+      "sha256": "c28b48c082cda842cb78af8950839d0f2e3be5b0c9f5064c49eb8b6d3ea25dcc"
+    },
+    "vendor/solidity/aave-v3/flashloan/base/FlashLoanReceiverBase.sol": {
+      "upstream": "@aave/core-v3/contracts/flashloan/base/FlashLoanReceiverBase.sol",
+      "upstreamSha256": "45dde1ad267306024c2a67914cd6806c51cadb84699d4e7c354dab3b20398d3c",
+      "sha256": "45dde1ad267306024c2a67914cd6806c51cadb84699d4e7c354dab3b20398d3c"
+    },
+    "vendor/solidity/aave-v3/flashloan/interfaces/IFlashLoanReceiver.sol": {
+      "upstream": "@aave/core-v3/contracts/flashloan/interfaces/IFlashLoanReceiver.sol",
+      "upstreamSha256": "f6bee6a43d41542401994344cd2edddcf0ea0f1b6ab65d5bec2a3752d2b64491",
+      "sha256": "f6bee6a43d41542401994344cd2edddcf0ea0f1b6ab65d5bec2a3752d2b64491"
+    },
+    "vendor/solidity/aave-v3/flashloan/interfaces/IFlashLoanSimpleReceiver.sol": {
+      "upstream": "@aave/core-v3/contracts/flashloan/interfaces/IFlashLoanSimpleReceiver.sol",
+      "upstreamSha256": "bbb9fdb419e12d987b9cd1ea08f5e4eae905808866698568147c0f575e8b5d69",
+      "sha256": "bbb9fdb419e12d987b9cd1ea08f5e4eae905808866698568147c0f575e8b5d69"
+    },
+    "vendor/solidity/aave-v3/dependencies/chainlink/AggregatorInterface.sol": {
+      "upstream": "@aave/core-v3/contracts/dependencies/chainlink/AggregatorInterface.sol",
+      "upstreamSha256": "7a9d07a2ae13f2fa2c87b2f753c278ed38e76a8d750a935dfd98eb6eaffab1ae",
+      "sha256": "7a9d07a2ae13f2fa2c87b2f753c278ed38e76a8d750a935dfd98eb6eaffab1ae"
+    },
+    "vendor/solidity/aave-v3/dependencies/weth/WETH9.sol": {
+      "upstream": "@aave/core-v3/contracts/dependencies/weth/WETH9.sol",
+      "upstreamSha256": "442c9f615ae83aa474e6bd826f80cc90cc9a330a263c096a51af4126f53d1cdc",
+      "sha256": "442c9f615ae83aa474e6bd826f80cc90cc9a330a263c096a51af4126f53d1cdc"
+    },
+    "vendor/solidity/aave-v3/dependencies/openzeppelin/contracts/IERC20.sol": {
+      "upstream": "@aave/core-v3/contracts/dependencies/openzeppelin/contracts/IERC20.sol",
+      "upstreamSha256": "759a199d2ea04216c994204e46efe2bc561b2553ba65e3d2a9cb8c55e2c2a7a9",
+      "sha256": "759a199d2ea04216c994204e46efe2bc561b2553ba65e3d2a9cb8c55e2c2a7a9"
+    },
+    "vendor/solidity/aave-v3/dependencies/openzeppelin/contracts/ERC20.sol": {
+      "upstream": "@aave/core-v3/contracts/dependencies/openzeppelin/contracts/ERC20.sol",
+      "upstreamSha256": "a99d209a370070e594e52bdaef3ea18c7677ca02aa6d6a9d83440a1641ec4c71",
+      "sha256": "a99d209a370070e594e52bdaef3ea18c7677ca02aa6d6a9d83440a1641ec4c71"
+    },
+    "vendor/solidity/aave-v3/dependencies/openzeppelin/contracts/Ownable.sol": {
+      "upstream": "@aave/core-v3/contracts/dependencies/openzeppelin/contracts/Ownable.sol",
+      "upstreamSha256": "bee9f99b63186f2ea2a46ceca092eff21b5d70129199e761281fc457eaaca8f5",
+      "sha256": "bee9f99b63186f2ea2a46ceca092eff21b5d70129199e761281fc457eaaca8f5"
+    },
+    "vendor/solidity/aave-v3/dependencies/openzeppelin/contracts/SafeERC20.sol": {
+      "upstream": "@aave/core-v3/contracts/dependencies/openzeppelin/contracts/SafeERC20.sol",
+      "upstreamSha256": "11819fcf1e58e8081901ce5820193a31dd884bc8f185bc002edf5368b6caf113",
+      "sha256": "11819fcf1e58e8081901ce5820193a31dd884bc8f185bc002edf5368b6caf113"
+    },
+    "vendor/solidity/aave-v3/dependencies/openzeppelin/contracts/SafeMath.sol": {
+      "upstream": "@aave/core-v3/contracts/dependencies/openzeppelin/contracts/SafeMath.sol",
+      "upstreamSha256": "b49b9130f2d379a78ccbea81801b0e2a2a2221972c30a91a8032bcd769a4f7c2",
+      "sha256": "b49b9130f2d379a78ccbea81801b0e2a2a2221972c30a91a8032bcd769a4f7c2"
+    },
+    "vendor/solidity/aave-v3/dependencies/openzeppelin/contracts/Address.sol": {
+      "upstream": "@aave/core-v3/contracts/dependencies/openzeppelin/contracts/Address.sol",
+      "upstreamSha256": "1cb950c9d451fa88a3fcbec365945024eb7af7d100b240e7ae6ff6b89294188b",
+      "sha256": "1cb950c9d451fa88a3fcbec365945024eb7af7d100b240e7ae6ff6b89294188b"
+    },
+    "vendor/solidity/aave-v3/dependencies/openzeppelin/contracts/IERC20Detailed.sol": {
+      "upstream": "@aave/core-v3/contracts/dependencies/openzeppelin/contracts/IERC20Detailed.sol",
+      "upstreamSha256": "3bc1df9e7e55657e2a76ba6b8887e3c72b2a63c6ab8d21ea2f1e210369c5d44d",
+      "sha256": "3bc1df9e7e55657e2a76ba6b8887e3c72b2a63c6ab8d21ea2f1e210369c5d44d"
+    },
+    "vendor/solidity/aave-v3/dependencies/openzeppelin/contracts/IAccessControl.sol": {
+      "upstream": "@aave/core-v3/contracts/dependencies/openzeppelin/contracts/IAccessControl.sol",
+      "upstreamSha256": "97b5e06fdbc5b747debd184845550ea1ea8dc683e1836e4a93e3e2a1faeb3c9d",
+      "sha256": "97b5e06fdbc5b747debd184845550ea1ea8dc683e1836e4a93e3e2a1faeb3c9d"
+    },
+    "vendor/solidity/aave-v3/dependencies/openzeppelin/contracts/Context.sol": {
+      "upstream": "@aave/core-v3/contracts/dependencies/openzeppelin/contracts/Context.sol",
+      "upstreamSha256": "f2a72e63c3136095447fe920396cec17c23edd2b1f86262f4f5816671809dabb",
+      "sha256": "f2a72e63c3136095447fe920396cec17c23edd2b1f86262f4f5816671809dabb"
+    },
+    "vendor/solidity/aave-v3/dependencies/openzeppelin/contracts/Strings.sol": {
+      "upstream": "@aave/core-v3/contracts/dependencies/openzeppelin/contracts/Strings.sol",
+      "upstreamSha256": "bb5ad44f964a0061536d1d16eb68692ad50533369b593e4146fb34d9789b3da6",
+      "sha256": "bb5ad44f964a0061536d1d16eb68692ad50533369b593e4146fb34d9789b3da6"
+    },
+    "vendor/solidity/aave-v3/dependencies/openzeppelin/contracts/SafeCast.sol": {
+      "upstream": "@aave/core-v3/contracts/dependencies/openzeppelin/contracts/SafeCast.sol",
+      "upstreamSha256": "ce6241ee801233bca40aa81549fe7015d3da662e2b9824560523f92e7362f07d",
+      "sha256": "ce6241ee801233bca40aa81549fe7015d3da662e2b9824560523f92e7362f07d"
+    },
+    "vendor/solidity/aave-v3/dependencies/openzeppelin/contracts/ERC165.sol": {
+      "upstream": "@aave/core-v3/contracts/dependencies/openzeppelin/contracts/ERC165.sol",
+      "upstreamSha256": "69e7f042345ae6eb9109d17d4634e858263530a2a5febdd90eb81bc4f30e2160",
+      "sha256": "69e7f042345ae6eb9109d17d4634e858263530a2a5febdd90eb81bc4f30e2160"
+    },
+    "vendor/solidity/aave-v3/dependencies/openzeppelin/contracts/IERC165.sol": {
+      "upstream": "@aave/core-v3/contracts/dependencies/openzeppelin/contracts/IERC165.sol",
+      "upstreamSha256": "46a87001ed32ec69d6d6ff29fe34151249555f2b791f8288da482c07c88987ef",
+      "sha256": "46a87001ed32ec69d6d6ff29fe34151249555f2b791f8288da482c07c88987ef"
+    },
+    "vendor/solidity/aave-v3/dependencies/openzeppelin/contracts/AccessControl.sol": {
+      "upstream": "@aave/core-v3/contracts/dependencies/openzeppelin/contracts/AccessControl.sol",
+      "upstreamSha256": "7a9627bf654bdf77f86e5645b2ccfa2b0a35ce61c4defa956c80734d89b56c9d",
+      "sha256": "7a9627bf654bdf77f86e5645b2ccfa2b0a35ce61c4defa956c80734d89b56c9d"
+    },
+    "vendor/solidity/aave-v3/dependencies/openzeppelin/upgradeability/Initializable.sol": {
+      "upstream": "@aave/core-v3/contracts/dependencies/openzeppelin/upgradeability/Initializable.sol",
+      "upstreamSha256": "53bd8a635b04aa630e43793cc54545367e9b00195f1f0f16ca42b8ac5be494d2",
+      "sha256": "53bd8a635b04aa630e43793cc54545367e9b00195f1f0f16ca42b8ac5be494d2"
+    },
+    "vendor/solidity/aave-v3/dependencies/openzeppelin/upgradeability/AdminUpgradeabilityProxy.sol": {
+      "upstream": "@aave/core-v3/contracts/dependencies/openzeppelin/upgradeability/AdminUpgradeabilityProxy.sol",
+      "upstreamSha256": "78e75e68f04fa7a58d8ee5fd2032cad947d8482269d062eb93f338f24fb7e60b",
+      "sha256": "78e75e68f04fa7a58d8ee5fd2032cad947d8482269d062eb93f338f24fb7e60b"
+    },
+    "vendor/solidity/aave-v3/dependencies/openzeppelin/upgradeability/BaseUpgradeabilityProxy.sol": {
+      "upstream": "@aave/core-v3/contracts/dependencies/openzeppelin/upgradeability/BaseUpgradeabilityProxy.sol",
+      "upstreamSha256": "4655b5b3880e338ad1cc345979ac726fa0817d45fba7ca409b0a163c21d5a798",
+      "sha256": "4655b5b3880e338ad1cc345979ac726fa0817d45fba7ca409b0a163c21d5a798"
+    },
+    "vendor/solidity/aave-v3/dependencies/openzeppelin/upgradeability/BaseAdminUpgradeabilityProxy.sol": {
+      "upstream": "@aave/core-v3/contracts/dependencies/openzeppelin/upgradeability/BaseAdminUpgradeabilityProxy.sol",
+      "upstreamSha256": "fab459e6fb0cc40092f086eed9820c3bd2e5be5e66b2fb40936d75e55de24d82",
+      "sha256": "fab459e6fb0cc40092f086eed9820c3bd2e5be5e66b2fb40936d75e55de24d82"
+    },
+    "vendor/solidity/aave-v3/dependencies/openzeppelin/upgradeability/InitializableUpgradeabilityProxy.sol": {
+      "upstream": "@aave/core-v3/contracts/dependencies/openzeppelin/upgradeability/InitializableUpgradeabilityProxy.sol",
+      "upstreamSha256": "955c5ec69e6e412810fa12aa619f34d25779212ea4529e2f9d3162348da2bf00",
+      "sha256": "955c5ec69e6e412810fa12aa619f34d25779212ea4529e2f9d3162348da2bf00"
+    },
+    "vendor/solidity/aave-v3/dependencies/openzeppelin/upgradeability/Proxy.sol": {
+      "upstream": "@aave/core-v3/contracts/dependencies/openzeppelin/upgradeability/Proxy.sol",
+      "upstreamSha256": "e8694951e2f96c9e7ee07c48f9f985626e62c3dc8b79743de7df10d107ca9eb5",
+      "sha256": "e8694951e2f96c9e7ee07c48f9f985626e62c3dc8b79743de7df10d107ca9eb5"
+    },
+    "vendor/solidity/aave-v3/dependencies/openzeppelin/upgradeability/InitializableAdminUpgradeabilityProxy.sol": {
+      "upstream": "@aave/core-v3/contracts/dependencies/openzeppelin/upgradeability/InitializableAdminUpgradeabilityProxy.sol",
+      "upstreamSha256": "4707225ba3da48409251b56da16ab56d1d3b601f3669a2e5a0456204fc64b847",
+      "sha256": "4707225ba3da48409251b56da16ab56d1d3b601f3669a2e5a0456204fc64b847"
+    },
+    "vendor/solidity/aave-v3/dependencies/openzeppelin/upgradeability/UpgradeabilityProxy.sol": {
+      "upstream": "@aave/core-v3/contracts/dependencies/openzeppelin/upgradeability/UpgradeabilityProxy.sol",
+      "upstreamSha256": "9716e021de0365262659f7d1eb469dce2cf426f33d3468ee23ac02fd5f49e3ae",
+      "sha256": "9716e021de0365262659f7d1eb469dce2cf426f33d3468ee23ac02fd5f49e3ae"
+    },
+    "vendor/solidity/aave-v3/dependencies/gnosis/contracts/GPv2SafeERC20.sol": {
+      "upstream": "@aave/core-v3/contracts/dependencies/gnosis/contracts/GPv2SafeERC20.sol",
+      "upstreamSha256": "1a7d55edfa9e41968b9612187726b504bb9585fb2042a550ded48f775f9b29c3",
+      "sha256": "1a7d55edfa9e41968b9612187726b504bb9585fb2042a550ded48f775f9b29c3"
+    },
+    "vendor/solidity/aave-v3/protocol/configuration/PoolAddressesProviderRegistry.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/configuration/PoolAddressesProviderRegistry.sol",
+      "upstreamSha256": "24dbdad79426725694c3a3f568994a4803e97abf76bac00a5a22f2e2afe93b8f",
+      "sha256": "24dbdad79426725694c3a3f568994a4803e97abf76bac00a5a22f2e2afe93b8f"
+    },
+    "vendor/solidity/aave-v3/protocol/configuration/PriceOracleSentinel.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/configuration/PriceOracleSentinel.sol",
+      "upstreamSha256": "421337e948544472c4f250efafa817c3e7fe7cb52c9b27b14789fbd1d5e86123",
+      "sha256": "421337e948544472c4f250efafa817c3e7fe7cb52c9b27b14789fbd1d5e86123"
+    },
+    "vendor/solidity/aave-v3/protocol/configuration/ACLManager.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/configuration/ACLManager.sol",
+      "upstreamSha256": "749c87b41216d2ec611e4e9a0f8c8174b279b99afee8d25c231a6ac160869154",
+      "sha256": "749c87b41216d2ec611e4e9a0f8c8174b279b99afee8d25c231a6ac160869154"
+    },
+    "vendor/solidity/aave-v3/protocol/configuration/PoolAddressesProvider.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/configuration/PoolAddressesProvider.sol",
+      "upstreamSha256": "6696a4b26a90e37cff793bac8428a35acea6188d78e979d6fc842d325f4c8da0",
+      "sha256": "6696a4b26a90e37cff793bac8428a35acea6188d78e979d6fc842d325f4c8da0"
+    },
+    "vendor/solidity/aave-v3/protocol/libraries/configuration/UserConfiguration.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/libraries/configuration/UserConfiguration.sol",
+      "upstreamSha256": "bf68a592df8e00e42a24076f0e6a925d2486bb6cae02b252ad4f48e116528a5c",
+      "sha256": "bf68a592df8e00e42a24076f0e6a925d2486bb6cae02b252ad4f48e116528a5c"
+    },
+    "vendor/solidity/aave-v3/protocol/libraries/configuration/ReserveConfiguration.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/libraries/configuration/ReserveConfiguration.sol",
+      "upstreamSha256": "6983afb0b2a021cbf9ebdd88d970a519d90ca3cad3aeae44a38125f293e8df6d",
+      "sha256": "6983afb0b2a021cbf9ebdd88d970a519d90ca3cad3aeae44a38125f293e8df6d"
+    },
+    "vendor/solidity/aave-v3/protocol/libraries/types/DataTypes.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/libraries/types/DataTypes.sol",
+      "upstreamSha256": "76d90509a0e359b071acd82729c76a406d63f23cfdcc1d60001b939c61efe4a1",
+      "sha256": "76d90509a0e359b071acd82729c76a406d63f23cfdcc1d60001b939c61efe4a1"
+    },
+    "vendor/solidity/aave-v3/protocol/libraries/types/ConfiguratorInputTypes.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/libraries/types/ConfiguratorInputTypes.sol",
+      "upstreamSha256": "f56e305810719e321e4585be8c42110a3f0e633c452e640b405a14857d057da9",
+      "sha256": "f56e305810719e321e4585be8c42110a3f0e633c452e640b405a14857d057da9"
+    },
+    "vendor/solidity/aave-v3/protocol/libraries/logic/GenericLogic.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/libraries/logic/GenericLogic.sol",
+      "upstreamSha256": "6a5dbf307801b001ae5cd450c7bc6a7c77947b50f4bc29bdb93661ed22ea795b",
+      "sha256": "6a5dbf307801b001ae5cd450c7bc6a7c77947b50f4bc29bdb93661ed22ea795b"
+    },
+    "vendor/solidity/aave-v3/protocol/libraries/logic/BridgeLogic.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/libraries/logic/BridgeLogic.sol",
+      "upstreamSha256": "591a2113030fd90b68f27520c88bc62a7f31100763a825bd73df43b5692b252c",
+      "sha256": "591a2113030fd90b68f27520c88bc62a7f31100763a825bd73df43b5692b252c"
+    },
+    "vendor/solidity/aave-v3/protocol/libraries/logic/ConfiguratorLogic.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/libraries/logic/ConfiguratorLogic.sol",
+      "upstreamSha256": "9d31de3443d7548d63340773bd473bd1a8b42b4d5e18476e9cbdd496e642d2e0",
+      "sha256": "9d31de3443d7548d63340773bd473bd1a8b42b4d5e18476e9cbdd496e642d2e0"
+    },
+    "vendor/solidity/aave-v3/protocol/libraries/logic/ReserveLogic.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/libraries/logic/ReserveLogic.sol",
+      "upstreamSha256": "6b827ea494fa5bb1b38fa9e7db973bd0aed0ee3d53677cac950f6614cb8fd0c9",
+      "sha256": "6b827ea494fa5bb1b38fa9e7db973bd0aed0ee3d53677cac950f6614cb8fd0c9"
+    },
+    "vendor/solidity/aave-v3/protocol/libraries/logic/PoolLogic.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/libraries/logic/PoolLogic.sol",
+      "upstreamSha256": "3dc06f065dc46daef019db9d6b5dcf4652303f503adf6373d52cacc1eb937702",
+      "sha256": "3dc06f065dc46daef019db9d6b5dcf4652303f503adf6373d52cacc1eb937702"
+    },
+    "vendor/solidity/aave-v3/protocol/libraries/logic/EModeLogic.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/libraries/logic/EModeLogic.sol",
+      "upstreamSha256": "c724647df857fb60e2209c724cd0991e6b99072953dbbefa116621cd651b2b8d",
+      "sha256": "c724647df857fb60e2209c724cd0991e6b99072953dbbefa116621cd651b2b8d"
+    },
+    "vendor/solidity/aave-v3/protocol/libraries/logic/LiquidationLogic.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/libraries/logic/LiquidationLogic.sol",
+      "upstreamSha256": "4fecfabd4ebbeccba176f41b3417dd5b3f16d65100d9e9cd373b7ed0dec51d5a",
+      "sha256": "18aadebb528fb616ecc9594ac09b617a12056d6d9cab1eac259833377c694d05"
+    },
+    "vendor/solidity/aave-v3/protocol/libraries/logic/SupplyLogic.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/libraries/logic/SupplyLogic.sol",
+      "upstreamSha256": "34a3bed849e77131a6c1f6d2af47614cbfdce3c25eba7b39e60608f79d6b2aa9",
+      "sha256": "34a3bed849e77131a6c1f6d2af47614cbfdce3c25eba7b39e60608f79d6b2aa9"
+    },
+    "vendor/solidity/aave-v3/protocol/libraries/logic/CalldataLogic.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/libraries/logic/CalldataLogic.sol",
+      "upstreamSha256": "a8252064f9c2c1db30d2f07cc8f21173621b2d9ad561288ebb58dd61b67c4484",
+      "sha256": "a8252064f9c2c1db30d2f07cc8f21173621b2d9ad561288ebb58dd61b67c4484"
+    },
+    "vendor/solidity/aave-v3/protocol/libraries/logic/ValidationLogic.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/libraries/logic/ValidationLogic.sol",
+      "upstreamSha256": "5d5f7a76a4e03b258679792885c068e2974293679d7baea09c0b7d6de0c2d329",
+      "sha256": "5d5f7a76a4e03b258679792885c068e2974293679d7baea09c0b7d6de0c2d329"
+    },
+    "vendor/solidity/aave-v3/protocol/libraries/logic/FlashLoanLogic.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/libraries/logic/FlashLoanLogic.sol",
+      "upstreamSha256": "8a581385ba398698b769e333d093410198d95ccbd5d22fafacbb90093f6d5f6d",
+      "sha256": "8a581385ba398698b769e333d093410198d95ccbd5d22fafacbb90093f6d5f6d"
+    },
+    "vendor/solidity/aave-v3/protocol/libraries/logic/IsolationModeLogic.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/libraries/logic/IsolationModeLogic.sol",
+      "upstreamSha256": "33ff4d32b603c2dca77d8fc80b638e9d28fa00065c4f98705beeeb3b96e69e31",
+      "sha256": "33ff4d32b603c2dca77d8fc80b638e9d28fa00065c4f98705beeeb3b96e69e31"
+    },
+    "vendor/solidity/aave-v3/protocol/libraries/logic/BorrowLogic.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/libraries/logic/BorrowLogic.sol",
+      "upstreamSha256": "70f762de50af5d78be419edb890227d515ab46e820501d52869a2289cebe337f",
+      "sha256": "70f762de50af5d78be419edb890227d515ab46e820501d52869a2289cebe337f"
+    },
+    "vendor/solidity/aave-v3/protocol/libraries/math/MathUtils.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/libraries/math/MathUtils.sol",
+      "upstreamSha256": "7f73c927e9801debfe0666e2a6364b92f62fd2d58d0c4b485ff04765fd4dc58d",
+      "sha256": "7f73c927e9801debfe0666e2a6364b92f62fd2d58d0c4b485ff04765fd4dc58d"
+    },
+    "vendor/solidity/aave-v3/protocol/libraries/math/PercentageMath.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/libraries/math/PercentageMath.sol",
+      "upstreamSha256": "6f165ad32ddcc3383cbb611cc3045c1a4bb28f16f83a85015fe202803de0161f",
+      "sha256": "6f165ad32ddcc3383cbb611cc3045c1a4bb28f16f83a85015fe202803de0161f"
+    },
+    "vendor/solidity/aave-v3/protocol/libraries/math/WadRayMath.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/libraries/math/WadRayMath.sol",
+      "upstreamSha256": "fae5b995ec613cc213050c99ea6352c9c18ceebba106d03b1726cfa8f1f0124e",
+      "sha256": "fae5b995ec613cc213050c99ea6352c9c18ceebba106d03b1726cfa8f1f0124e"
+    },
+    "vendor/solidity/aave-v3/protocol/libraries/aave-upgradeability/InitializableImmutableAdminUpgradeabilityProxy.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/libraries/aave-upgradeability/InitializableImmutableAdminUpgradeabilityProxy.sol",
+      "upstreamSha256": "76377222b9f8f2ea8db65aac0a0d7cc0143175d446b5123f6639739eadfa3986",
+      "sha256": "76377222b9f8f2ea8db65aac0a0d7cc0143175d446b5123f6639739eadfa3986"
+    },
+    "vendor/solidity/aave-v3/protocol/libraries/aave-upgradeability/BaseImmutableAdminUpgradeabilityProxy.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/libraries/aave-upgradeability/BaseImmutableAdminUpgradeabilityProxy.sol",
+      "upstreamSha256": "330d6fff526149b9d1880e373ea9fd928fc905ad678f2f36ddd53ef4000341c5",
+      "sha256": "330d6fff526149b9d1880e373ea9fd928fc905ad678f2f36ddd53ef4000341c5"
+    },
+    "vendor/solidity/aave-v3/protocol/libraries/aave-upgradeability/VersionedInitializable.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/libraries/aave-upgradeability/VersionedInitializable.sol",
+      "upstreamSha256": "5a49f6c9d9da1e4ccf30c7b62589aecd8556e43719a08191c71a51d6c9220879",
+      "sha256": "5a49f6c9d9da1e4ccf30c7b62589aecd8556e43719a08191c71a51d6c9220879"
+    },
+    "vendor/solidity/aave-v3/protocol/libraries/helpers/Errors.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/libraries/helpers/Errors.sol",
+      "upstreamSha256": "dea1dcf0a8838e7560e03e0f32e4f53c69c98b167b8a44afcd1f0110191e6602",
+      "sha256": "dea1dcf0a8838e7560e03e0f32e4f53c69c98b167b8a44afcd1f0110191e6602"
+    },
+    "vendor/solidity/aave-v3/protocol/libraries/helpers/Helpers.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/libraries/helpers/Helpers.sol",
+      "upstreamSha256": "6bdba56d4c29695a39731bbd22b73c2cf0e29457dffbcaf24eb3877ee83137bc",
+      "sha256": "6bdba56d4c29695a39731bbd22b73c2cf0e29457dffbcaf24eb3877ee83137bc"
+    },
+    "vendor/solidity/aave-v3/protocol/tokenization/DelegationAwareAToken.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/tokenization/DelegationAwareAToken.sol",
+      "upstreamSha256": "d7d54e2736a71d4023585bfff9eb0d534fad425ef23a0c2a798090e1759e17df",
+      "sha256": "d7d54e2736a71d4023585bfff9eb0d534fad425ef23a0c2a798090e1759e17df"
+    },
+    "vendor/solidity/aave-v3/protocol/tokenization/AToken.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/tokenization/AToken.sol",
+      "upstreamSha256": "6485ecb5b73cdfa0b911e94a68a86dedca6122782311080f0683e503eef70651",
+      "sha256": "6485ecb5b73cdfa0b911e94a68a86dedca6122782311080f0683e503eef70651"
+    },
+    "vendor/solidity/aave-v3/protocol/tokenization/VariableDebtToken.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/tokenization/VariableDebtToken.sol",
+      "upstreamSha256": "d6fb7eb2ccfa7a124d31db2f96381e4f91f270167cc5ecbe7b5a796b15a35ad5",
+      "sha256": "d6fb7eb2ccfa7a124d31db2f96381e4f91f270167cc5ecbe7b5a796b15a35ad5"
+    },
+    "vendor/solidity/aave-v3/protocol/tokenization/StableDebtToken.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/tokenization/StableDebtToken.sol",
+      "upstreamSha256": "bd9809f6135fcc1fac005216ff8d83faa13357ed1c915dab1a1deef03081f636",
+      "sha256": "bd9809f6135fcc1fac005216ff8d83faa13357ed1c915dab1a1deef03081f636"
+    },
+    "vendor/solidity/aave-v3/protocol/tokenization/base/EIP712Base.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/tokenization/base/EIP712Base.sol",
+      "upstreamSha256": "00a6ed8cf0879e5cb0f5020dadfdacccdf511c39e9aa840d519403572a09748c",
+      "sha256": "00a6ed8cf0879e5cb0f5020dadfdacccdf511c39e9aa840d519403572a09748c"
+    },
+    "vendor/solidity/aave-v3/protocol/tokenization/base/ScaledBalanceTokenBase.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/tokenization/base/ScaledBalanceTokenBase.sol",
+      "upstreamSha256": "a3099e1cdba22608d9963f21007c6514b157701c2bf27ebce007bb7b4993263f",
+      "sha256": "a3099e1cdba22608d9963f21007c6514b157701c2bf27ebce007bb7b4993263f"
+    },
+    "vendor/solidity/aave-v3/protocol/tokenization/base/MintableIncentivizedERC20.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/tokenization/base/MintableIncentivizedERC20.sol",
+      "upstreamSha256": "78640cfe53cd736c815d844d423a4eafe9d8c4eb52fea880b415cc981a7f50d3",
+      "sha256": "78640cfe53cd736c815d844d423a4eafe9d8c4eb52fea880b415cc981a7f50d3"
+    },
+    "vendor/solidity/aave-v3/protocol/tokenization/base/DebtTokenBase.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/tokenization/base/DebtTokenBase.sol",
+      "upstreamSha256": "83906f39ed25b5d4826db1d502dfef17ac655e9e1ac49d4cd854301ae80e8b04",
+      "sha256": "83906f39ed25b5d4826db1d502dfef17ac655e9e1ac49d4cd854301ae80e8b04"
+    },
+    "vendor/solidity/aave-v3/protocol/tokenization/base/IncentivizedERC20.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/tokenization/base/IncentivizedERC20.sol",
+      "upstreamSha256": "a0c5055c7e8bd100d300ba8ae583c76848bff187e1179971a89534bbcb276ca4",
+      "sha256": "a0c5055c7e8bd100d300ba8ae583c76848bff187e1179971a89534bbcb276ca4"
+    },
+    "vendor/solidity/aave-v3/protocol/pool/L2Pool.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/pool/L2Pool.sol",
+      "upstreamSha256": "aed0c6ed143a314eaef3e8902daeafba28558a9c336a06e3b6926afb537f7598",
+      "sha256": "aed0c6ed143a314eaef3e8902daeafba28558a9c336a06e3b6926afb537f7598"
+    },
+    "vendor/solidity/aave-v3/protocol/pool/Pool.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/pool/Pool.sol",
+      "upstreamSha256": "7cc29ed1b555fdc9be5574e9967d1637b5b2d5e206def934a742f148d05cfa34",
+      "sha256": "7cc29ed1b555fdc9be5574e9967d1637b5b2d5e206def934a742f148d05cfa34"
+    },
+    "vendor/solidity/aave-v3/protocol/pool/PoolStorage.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/pool/PoolStorage.sol",
+      "upstreamSha256": "4ba0fb4ded5f2ff53bf74a4c78dee2f64ac8502ef2722b3f7a1722107a27a3ca",
+      "sha256": "4ba0fb4ded5f2ff53bf74a4c78dee2f64ac8502ef2722b3f7a1722107a27a3ca"
+    },
+    "vendor/solidity/aave-v3/protocol/pool/PoolConfigurator.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/pool/PoolConfigurator.sol",
+      "upstreamSha256": "53d43f13200d87c4283ae70c3711c88481133eefc0b351962ddee3f6fa419779",
+      "sha256": "53d43f13200d87c4283ae70c3711c88481133eefc0b351962ddee3f6fa419779"
+    },
+    "vendor/solidity/aave-v3/protocol/pool/DefaultReserveInterestRateStrategy.sol": {
+      "upstream": "@aave/core-v3/contracts/protocol/pool/DefaultReserveInterestRateStrategy.sol",
+      "upstreamSha256": "0e5aa1d968ed81567de83660f8335d91b7d62d3d084cae5f40373b26ed0e22f0",
+      "sha256": "0e5aa1d968ed81567de83660f8335d91b7d62d3d084cae5f40373b26ed0e22f0"
+    },
+    "vendor/solidity/aave-v3/interfaces/IInitializableAToken.sol": {
+      "upstream": "@aave/core-v3/contracts/interfaces/IInitializableAToken.sol",
+      "upstreamSha256": "a5c0f77b8803344e1b74bb6a675e95a7d88a2fe61b32f10bbc5f1da77de577b1",
+      "sha256": "a5c0f77b8803344e1b74bb6a675e95a7d88a2fe61b32f10bbc5f1da77de577b1"
+    },
+    "vendor/solidity/aave-v3/interfaces/IPoolAddressesProviderRegistry.sol": {
+      "upstream": "@aave/core-v3/contracts/interfaces/IPoolAddressesProviderRegistry.sol",
+      "upstreamSha256": "d40d8ea0cb92b05855f6ba3966a7b68ee4e9f635454b2763e34a6499230ff7fe",
+      "sha256": "d40d8ea0cb92b05855f6ba3966a7b68ee4e9f635454b2763e34a6499230ff7fe"
+    },
+    "vendor/solidity/aave-v3/interfaces/IPoolAddressesProvider.sol": {
+      "upstream": "@aave/core-v3/contracts/interfaces/IPoolAddressesProvider.sol",
+      "upstreamSha256": "419371fd89901f852ad2e6ed2a043c88db00f73394266857ece39e769e2242e4",
+      "sha256": "419371fd89901f852ad2e6ed2a043c88db00f73394266857ece39e769e2242e4"
+    },
+    "vendor/solidity/aave-v3/interfaces/ISequencerOracle.sol": {
+      "upstream": "@aave/core-v3/contracts/interfaces/ISequencerOracle.sol",
+      "upstreamSha256": "f8846c0e30cf005286b7a5f5320bfee29d315b726931f05f93086035a1846a56",
+      "sha256": "f8846c0e30cf005286b7a5f5320bfee29d315b726931f05f93086035a1846a56"
+    },
+    "vendor/solidity/aave-v3/interfaces/IL2Pool.sol": {
+      "upstream": "@aave/core-v3/contracts/interfaces/IL2Pool.sol",
+      "upstreamSha256": "2ffeaf93f0d5ba79806fe53fc68d7a3be9d540ff424bb21bfd1d47c74723ec05",
+      "sha256": "2ffeaf93f0d5ba79806fe53fc68d7a3be9d540ff424bb21bfd1d47c74723ec05"
+    },
+    "vendor/solidity/aave-v3/interfaces/ICreditDelegationToken.sol": {
+      "upstream": "@aave/core-v3/contracts/interfaces/ICreditDelegationToken.sol",
+      "upstreamSha256": "5cf10936bcef4b5f9fdfd6f04efe508fc4ade98d56a4b9e3458fbe118e2016ba",
+      "sha256": "5cf10936bcef4b5f9fdfd6f04efe508fc4ade98d56a4b9e3458fbe118e2016ba"
+    },
+    "vendor/solidity/aave-v3/interfaces/IERC20WithPermit.sol": {
+      "upstream": "@aave/core-v3/contracts/interfaces/IERC20WithPermit.sol",
+      "upstreamSha256": "67ef23939d31bc3ed3ca6d92d38645976d66e72ec28555caf2a8a73b6e14cab0",
+      "sha256": "67ef23939d31bc3ed3ca6d92d38645976d66e72ec28555caf2a8a73b6e14cab0"
+    },
+    "vendor/solidity/aave-v3/interfaces/IDefaultInterestRateStrategy.sol": {
+      "upstream": "@aave/core-v3/contracts/interfaces/IDefaultInterestRateStrategy.sol",
+      "upstreamSha256": "5d56681a6e591d4c6cf5244dadddbd5de73e4da1f93d1785f0559d9f6cab726c",
+      "sha256": "5d56681a6e591d4c6cf5244dadddbd5de73e4da1f93d1785f0559d9f6cab726c"
+    },
+    "vendor/solidity/aave-v3/interfaces/IPoolConfigurator.sol": {
+      "upstream": "@aave/core-v3/contracts/interfaces/IPoolConfigurator.sol",
+      "upstreamSha256": "69adccdc37b6401a7e4bd6dde4f3c51224710cf51a430e1f57c5d57c4feb907a",
+      "sha256": "69adccdc37b6401a7e4bd6dde4f3c51224710cf51a430e1f57c5d57c4feb907a"
+    },
+    "vendor/solidity/aave-v3/interfaces/IACLManager.sol": {
+      "upstream": "@aave/core-v3/contracts/interfaces/IACLManager.sol",
+      "upstreamSha256": "6bef9ac0f05be4aea1fa324914224d61c5b45f6351e6355ac0dcf41d51bc41a0",
+      "sha256": "6bef9ac0f05be4aea1fa324914224d61c5b45f6351e6355ac0dcf41d51bc41a0"
+    },
+    "vendor/solidity/aave-v3/interfaces/IPriceOracle.sol": {
+      "upstream": "@aave/core-v3/contracts/interfaces/IPriceOracle.sol",
+      "upstreamSha256": "a98581c0b2c68f339c9d5349cd80faf379ef2b36f6799f26f6284cd431e70927",
+      "sha256": "a98581c0b2c68f339c9d5349cd80faf379ef2b36f6799f26f6284cd431e70927"
+    },
+    "vendor/solidity/aave-v3/interfaces/IAaveIncentivesController.sol": {
+      "upstream": "@aave/core-v3/contracts/interfaces/IAaveIncentivesController.sol",
+      "upstreamSha256": "32b0077aa798eb53a41c058e4198d88a8701b8845e4cf959384e0f87cdd82c98",
+      "sha256": "32b0077aa798eb53a41c058e4198d88a8701b8845e4cf959384e0f87cdd82c98"
+    },
+    "vendor/solidity/aave-v3/interfaces/IVariableDebtToken.sol": {
+      "upstream": "@aave/core-v3/contracts/interfaces/IVariableDebtToken.sol",
+      "upstreamSha256": "708f7c5c0dae8a706f35ec90ad09044285000e9bf7f6a74f6eebc9cadd348c50",
+      "sha256": "708f7c5c0dae8a706f35ec90ad09044285000e9bf7f6a74f6eebc9cadd348c50"
+    },
+    "vendor/solidity/aave-v3/interfaces/IScaledBalanceToken.sol": {
+      "upstream": "@aave/core-v3/contracts/interfaces/IScaledBalanceToken.sol",
+      "upstreamSha256": "6dbe39f0e2e0855e1fe4d8944a068b365d19132d817e38352011ce865448fc21",
+      "sha256": "6dbe39f0e2e0855e1fe4d8944a068b365d19132d817e38352011ce865448fc21"
+    },
+    "vendor/solidity/aave-v3/interfaces/IReserveInterestRateStrategy.sol": {
+      "upstream": "@aave/core-v3/contracts/interfaces/IReserveInterestRateStrategy.sol",
+      "upstreamSha256": "4139967edd730d40ae0e3b51a017d58ea0485f66f0577cc66a61d9d4cfd95214",
+      "sha256": "4139967edd730d40ae0e3b51a017d58ea0485f66f0577cc66a61d9d4cfd95214"
+    },
+    "vendor/solidity/aave-v3/interfaces/IInitializableDebtToken.sol": {
+      "upstream": "@aave/core-v3/contracts/interfaces/IInitializableDebtToken.sol",
+      "upstreamSha256": "676f0387ccca93e05962a71cf8f5cf5ebb4723c8baafcdaeed5d8992288c9705",
+      "sha256": "676f0387ccca93e05962a71cf8f5cf5ebb4723c8baafcdaeed5d8992288c9705"
+    },
+    "vendor/solidity/aave-v3/interfaces/IPool.sol": {
+      "upstream": "@aave/core-v3/contracts/interfaces/IPool.sol",
+      "upstreamSha256": "d708ba2c3cf29fe81083b7b8127ef61b7d750dc017399ebaa2951d6f61a93dda",
+      "sha256": "d708ba2c3cf29fe81083b7b8127ef61b7d750dc017399ebaa2951d6f61a93dda"
+    },
+    "vendor/solidity/aave-v3/interfaces/IAToken.sol": {
+      "upstream": "@aave/core-v3/contracts/interfaces/IAToken.sol",
+      "upstreamSha256": "733f1d6bb69f95d7a67b2eab85df53f25f63c7de109b673de7159d235488e127",
+      "sha256": "733f1d6bb69f95d7a67b2eab85df53f25f63c7de109b673de7159d235488e127"
+    },
+    "vendor/solidity/aave-v3/interfaces/IPoolDataProvider.sol": {
+      "upstream": "@aave/core-v3/contracts/interfaces/IPoolDataProvider.sol",
+      "upstreamSha256": "c06204e23c9446baf41063aa146f92a0b60f610efc59055988bff3e865c6829f",
+      "sha256": "c06204e23c9446baf41063aa146f92a0b60f610efc59055988bff3e865c6829f"
+    },
+    "vendor/solidity/aave-v3/interfaces/IAaveOracle.sol": {
+      "upstream": "@aave/core-v3/contracts/interfaces/IAaveOracle.sol",
+      "upstreamSha256": "1618db199968930466766358a7a3395cae37d4631686db0de76e9222ade6f839",
+      "sha256": "1618db199968930466766358a7a3395cae37d4631686db0de76e9222ade6f839"
+    },
+    "vendor/solidity/aave-v3/interfaces/IStableDebtToken.sol": {
+      "upstream": "@aave/core-v3/contracts/interfaces/IStableDebtToken.sol",
+      "upstreamSha256": "5c942518f9e0999342c51690cab91eef8fd1d3ee8390189950659be0caab3d6b",
+      "sha256": "5c942518f9e0999342c51690cab91eef8fd1d3ee8390189950659be0caab3d6b"
+    },
+    "vendor/solidity/aave-v3/interfaces/IDelegationToken.sol": {
+      "upstream": "@aave/core-v3/contracts/interfaces/IDelegationToken.sol",
+      "upstreamSha256": "1c0379154beea6fd75d2ae5f19ec5f54973543fb682c310b1331a9bae4720ce0",
+      "sha256": "1c0379154beea6fd75d2ae5f19ec5f54973543fb682c310b1331a9bae4720ce0"
+    },
+    "vendor/solidity/aave-v3/interfaces/IPriceOracleGetter.sol": {
+      "upstream": "@aave/core-v3/contracts/interfaces/IPriceOracleGetter.sol",
+      "upstreamSha256": "64198de7b821745ac1117500fcee905b1f465ec4911a5a07d494eed98a2b6786",
+      "sha256": "64198de7b821745ac1117500fcee905b1f465ec4911a5a07d494eed98a2b6786"
+    },
+    "vendor/solidity/aave-v3/interfaces/IPriceOracleSentinel.sol": {
+      "upstream": "@aave/core-v3/contracts/interfaces/IPriceOracleSentinel.sol",
+      "upstreamSha256": "429da9d61e3981ef6585823e30823512e8026b923e793aff4f2bb63917188d2a",
+      "sha256": "429da9d61e3981ef6585823e30823512e8026b923e793aff4f2bb63917188d2a"
+    },
+    "vendor/solidity/aave-v3/deployments/ReservesSetupHelper.sol": {
+      "upstream": "@aave/core-v3/contracts/deployments/ReservesSetupHelper.sol",
+      "upstreamSha256": "fc8ea7bb0042be64cc5d035d967e3331e6ed64d52120dc5d2ff5d6efe74242af",
+      "sha256": "fc8ea7bb0042be64cc5d035d967e3331e6ed64d52120dc5d2ff5d6efe74242af"
+    },
+    "vendor/solidity/openzeppelin/token/ERC20/IERC20.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "upstreamSha256": "7ebde70853ccafcf1876900dad458f46eb9444d591d39bfc58e952e2582f5587",
+      "sha256": "7ebde70853ccafcf1876900dad458f46eb9444d591d39bfc58e952e2582f5587"
+    },
+    "vendor/solidity/openzeppelin/token/ERC20/ERC20.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "upstreamSha256": "d20d52b4be98738b8aa52b5bb0f88943f62128969b33d654fbca731539a7fe0a",
+      "sha256": "d20d52b4be98738b8aa52b5bb0f88943f62128969b33d654fbca731539a7fe0a"
+    },
+    "vendor/solidity/openzeppelin/token/ERC20/utils/TokenTimelock.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC20/utils/TokenTimelock.sol",
+      "upstreamSha256": "52ffb1d977274c3f9868789997def43a198061a4d2fed4f1cc987e5193bf78d9",
+      "sha256": "52ffb1d977274c3f9868789997def43a198061a4d2fed4f1cc987e5193bf78d9"
+    },
+    "vendor/solidity/openzeppelin/token/ERC20/utils/SafeERC20.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+      "upstreamSha256": "82dc918d8df553e2461b96595580e565424b407d73dab8a7ce4bde479810fb2a",
+      "sha256": "82dc918d8df553e2461b96595580e565424b407d73dab8a7ce4bde479810fb2a"
+    },
+    "vendor/solidity/openzeppelin/token/ERC20/extensions/IERC20Permit.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
+      "upstreamSha256": "bbf4d26d660ce8f9c9887af3a46bf4eab5f4c15eb8413ad89b65ecdd05dee7a9",
+      "sha256": "bbf4d26d660ce8f9c9887af3a46bf4eab5f4c15eb8413ad89b65ecdd05dee7a9"
+    },
+    "vendor/solidity/openzeppelin/token/ERC20/extensions/ERC20Burnable.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol",
+      "upstreamSha256": "0344809a1044e11ece2401b4f7288f414ea41fa9d1dad24143c84b737c9fc02e",
+      "sha256": "0344809a1044e11ece2401b4f7288f414ea41fa9d1dad24143c84b737c9fc02e"
+    },
+    "vendor/solidity/openzeppelin/token/ERC20/extensions/ERC20Permit.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol",
+      "upstreamSha256": "89bfb6393150001a5e394e9347ba4addf460b3579450a6caa28ae7d1f24e427c",
+      "sha256": "89bfb6393150001a5e394e9347ba4addf460b3579450a6caa28ae7d1f24e427c"
+    },
+    "vendor/solidity/openzeppelin/token/ERC20/extensions/draft-IERC20Permit.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC20/extensions/draft-IERC20Permit.sol",
+      "upstreamSha256": "ae1ea8d6c6eb4d581407270f56ec0e9dd5cb1e7e2d704ae8084f1f8013bfdcbf",
+      "sha256": "ae1ea8d6c6eb4d581407270f56ec0e9dd5cb1e7e2d704ae8084f1f8013bfdcbf"
+    },
+    "vendor/solidity/openzeppelin/token/ERC20/extensions/ERC20Pausable.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC20/extensions/ERC20Pausable.sol",
+      "upstreamSha256": "9c68903fdd3d113f683b70f78c25c3757e8efbe753663f099db934db09eae74d",
+      "sha256": "9c68903fdd3d113f683b70f78c25c3757e8efbe753663f099db934db09eae74d"
+    },
+    "vendor/solidity/openzeppelin/token/ERC20/extensions/IERC20Metadata.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+      "upstreamSha256": "af5c8a77965cc82c33b7ff844deb9826166689e55dc037a7f2f790d057811990",
+      "sha256": "af5c8a77965cc82c33b7ff844deb9826166689e55dc037a7f2f790d057811990"
+    },
+    "vendor/solidity/openzeppelin/token/ERC20/extensions/ERC20VotesComp.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC20/extensions/ERC20VotesComp.sol",
+      "upstreamSha256": "88022aaf65e6d16f637ca07623d2f55636909c5b79604c45c3c41b21148d1b38",
+      "sha256": "88022aaf65e6d16f637ca07623d2f55636909c5b79604c45c3c41b21148d1b38"
+    },
+    "vendor/solidity/openzeppelin/token/ERC20/extensions/ERC20Votes.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol",
+      "upstreamSha256": "e33bd5974dbcb0f6c2d6af45e29a2f10bb53bc9f63b8d899d0b746beff4f84bc",
+      "sha256": "e33bd5974dbcb0f6c2d6af45e29a2f10bb53bc9f63b8d899d0b746beff4f84bc"
+    },
+    "vendor/solidity/openzeppelin/token/ERC20/extensions/draft-ERC20Permit.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol",
+      "upstreamSha256": "8363cc334629fd8c107d42ff7210767cbbb944d8d51d8ca2bad4ad9cc3aff839",
+      "sha256": "8363cc334629fd8c107d42ff7210767cbbb944d8d51d8ca2bad4ad9cc3aff839"
+    },
+    "vendor/solidity/openzeppelin/token/ERC20/extensions/ERC20Wrapper.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC20/extensions/ERC20Wrapper.sol",
+      "upstreamSha256": "88381270b494a33a90b906a4c2b2ffc34f57ffec51d3f4e628a7c6fae637b76f",
+      "sha256": "88381270b494a33a90b906a4c2b2ffc34f57ffec51d3f4e628a7c6fae637b76f"
+    },
+    "vendor/solidity/openzeppelin/token/ERC20/extensions/ERC20Snapshot.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC20/extensions/ERC20Snapshot.sol",
+      "upstreamSha256": "06035a1e540c1acf26fe0e3cabe3cd522492254ab7b087b947179ad05b2212bf",
+      "sha256": "06035a1e540c1acf26fe0e3cabe3cd522492254ab7b087b947179ad05b2212bf"
+    },
+    "vendor/solidity/openzeppelin/token/ERC20/extensions/ERC20FlashMint.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC20/extensions/ERC20FlashMint.sol",
+      "upstreamSha256": "9100643895407541580e83cdf3e98a805917421114a39b39b1af6b8f4701fefa",
+      "sha256": "9100643895407541580e83cdf3e98a805917421114a39b39b1af6b8f4701fefa"
+    },
+    "vendor/solidity/openzeppelin/token/ERC20/extensions/ERC20Capped.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC20/extensions/ERC20Capped.sol",
+      "upstreamSha256": "00d9364a71bfb7590fdeb7e097fe84159f4fc002c4f603b036c61f91e6368861",
+      "sha256": "00d9364a71bfb7590fdeb7e097fe84159f4fc002c4f603b036c61f91e6368861"
+    },
+    "vendor/solidity/openzeppelin/token/ERC20/extensions/ERC4626.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC20/extensions/ERC4626.sol",
+      "upstreamSha256": "0610f62eeae3a7dee46c4c37cc80c59060fd56cea7fb1e00a950f1e6a2f981ac",
+      "sha256": "0610f62eeae3a7dee46c4c37cc80c59060fd56cea7fb1e00a950f1e6a2f981ac"
+    },
+    "vendor/solidity/openzeppelin/token/ERC20/presets/ERC20PresetMinterPauser.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC20/presets/ERC20PresetMinterPauser.sol",
+      "upstreamSha256": "e5b760586195df81f04b9940a7f3fd1cc8af9965471e786349eda7d84ae55ea1",
+      "sha256": "e5b760586195df81f04b9940a7f3fd1cc8af9965471e786349eda7d84ae55ea1"
+    },
+    "vendor/solidity/openzeppelin/token/ERC20/presets/ERC20PresetFixedSupply.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC20/presets/ERC20PresetFixedSupply.sol",
+      "upstreamSha256": "a3252e5a567bba1e29373a9545d4608872e58169d32994670d97122a55e4dcbc",
+      "sha256": "a3252e5a567bba1e29373a9545d4608872e58169d32994670d97122a55e4dcbc"
+    },
+    "vendor/solidity/openzeppelin/token/ERC777/IERC777Recipient.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC777/IERC777Recipient.sol",
+      "upstreamSha256": "def97da79a096bb56b98c7abbd393acbb186a7796ef4302f0d8b4af0d6bb9b8e",
+      "sha256": "def97da79a096bb56b98c7abbd393acbb186a7796ef4302f0d8b4af0d6bb9b8e"
+    },
+    "vendor/solidity/openzeppelin/token/ERC777/IERC777Sender.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC777/IERC777Sender.sol",
+      "upstreamSha256": "8bfcc9000dec909558a8a5a2a707c4eafc2e81fc2255cb5d903aafd24889b28f",
+      "sha256": "8bfcc9000dec909558a8a5a2a707c4eafc2e81fc2255cb5d903aafd24889b28f"
+    },
+    "vendor/solidity/openzeppelin/token/ERC777/ERC777.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC777/ERC777.sol",
+      "upstreamSha256": "756b39685c5eb9c314c19ec0df0c94daf8937a90898e5c92fcb6e42bd9b5b0c6",
+      "sha256": "756b39685c5eb9c314c19ec0df0c94daf8937a90898e5c92fcb6e42bd9b5b0c6"
+    },
+    "vendor/solidity/openzeppelin/token/ERC777/IERC777.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC777/IERC777.sol",
+      "upstreamSha256": "5e770865b12a337b63abafb0d710d7741376919214b870be82a640775419ea9f",
+      "sha256": "5e770865b12a337b63abafb0d710d7741376919214b870be82a640775419ea9f"
+    },
+    "vendor/solidity/openzeppelin/token/ERC777/presets/ERC777PresetFixedSupply.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC777/presets/ERC777PresetFixedSupply.sol",
+      "upstreamSha256": "6ee7893572d1f0c036ec73805b121a6cf92fd8f9ec0ebd9bbe6bbde55e7d2a82",
+      "sha256": "6ee7893572d1f0c036ec73805b121a6cf92fd8f9ec0ebd9bbe6bbde55e7d2a82"
+    },
+    "vendor/solidity/openzeppelin/token/common/ERC2981.sol": {
+      "upstream": "@openzeppelin/contracts/token/common/ERC2981.sol",
+      "upstreamSha256": "dd89d98523e7fb3c913edb8eed1c795f071c7646f10a6248d36308e65b5c7185",
+      "sha256": "dd89d98523e7fb3c913edb8eed1c795f071c7646f10a6248d36308e65b5c7185"
+    },
+    "vendor/solidity/openzeppelin/token/ERC721/IERC721Receiver.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+      "upstreamSha256": "77f0f7340c2da6bb9edbc90ab6e7d3eb8e2ae18194791b827a3e8c0b11a09b43",
+      "sha256": "77f0f7340c2da6bb9edbc90ab6e7d3eb8e2ae18194791b827a3e8c0b11a09b43"
+    },
+    "vendor/solidity/openzeppelin/token/ERC721/ERC721.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+      "upstreamSha256": "7af3ff063370acb5e1f1a2aab125ceca457cd1fa60ff8afa37aabc366349d286",
+      "sha256": "7af3ff063370acb5e1f1a2aab125ceca457cd1fa60ff8afa37aabc366349d286"
+    },
+    "vendor/solidity/openzeppelin/token/ERC721/IERC721.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+      "upstreamSha256": "c8d867eda0fd764890040a3644f5ccf5db92f852779879f321ab3ad8b799bf97",
+      "sha256": "c8d867eda0fd764890040a3644f5ccf5db92f852779879f321ab3ad8b799bf97"
+    },
+    "vendor/solidity/openzeppelin/token/ERC721/utils/ERC721Holder.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC721/utils/ERC721Holder.sol",
+      "upstreamSha256": "995380c950997080660556ba6bc4e3bb37c1323b0539f31d6af40349fb2d7c4c",
+      "sha256": "995380c950997080660556ba6bc4e3bb37c1323b0539f31d6af40349fb2d7c4c"
+    },
+    "vendor/solidity/openzeppelin/token/ERC721/extensions/ERC721URIStorage.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+      "upstreamSha256": "7bf559fad1068a1329517b56b1ecddefa67e79a03bb0801b9e6bf06bf73eb334",
+      "sha256": "7bf559fad1068a1329517b56b1ecddefa67e79a03bb0801b9e6bf06bf73eb334"
+    },
+    "vendor/solidity/openzeppelin/token/ERC721/extensions/IERC721Enumerable.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol",
+      "upstreamSha256": "ec7cb6a8cc0fdad9e3a707146b503d976595a880d24d62c99565787593f3660b",
+      "sha256": "ec7cb6a8cc0fdad9e3a707146b503d976595a880d24d62c99565787593f3660b"
+    },
+    "vendor/solidity/openzeppelin/token/ERC721/extensions/IERC721Metadata.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+      "upstreamSha256": "f16b861aa1f623ccc5e173f1a82d8cf45b678a7fb81e05478fd17eb2ccb7b37e",
+      "sha256": "f16b861aa1f623ccc5e173f1a82d8cf45b678a7fb81e05478fd17eb2ccb7b37e"
+    },
+    "vendor/solidity/openzeppelin/token/ERC721/extensions/draft-ERC721Votes.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC721/extensions/draft-ERC721Votes.sol",
+      "upstreamSha256": "73fd65dbc85081a98da3d7bca30b51a405f7ea965b0851d9e7356989e2dedfed",
+      "sha256": "73fd65dbc85081a98da3d7bca30b51a405f7ea965b0851d9e7356989e2dedfed"
+    },
+    "vendor/solidity/openzeppelin/token/ERC721/extensions/ERC721Pausable.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC721/extensions/ERC721Pausable.sol",
+      "upstreamSha256": "329bed486a7d971fb37a44bb50d4b0b8e18cf3762229c7fb2e844826daeea707",
+      "sha256": "329bed486a7d971fb37a44bb50d4b0b8e18cf3762229c7fb2e844826daeea707"
+    },
+    "vendor/solidity/openzeppelin/token/ERC721/extensions/ERC721Royalty.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC721/extensions/ERC721Royalty.sol",
+      "upstreamSha256": "62f8c8444c308e869d0ac566048aa28ce0c1b259e7f8ec7f6fbca82fbfefa736",
+      "sha256": "62f8c8444c308e869d0ac566048aa28ce0c1b259e7f8ec7f6fbca82fbfefa736"
+    },
+    "vendor/solidity/openzeppelin/token/ERC721/extensions/ERC721Votes.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC721/extensions/ERC721Votes.sol",
+      "upstreamSha256": "dd4ac4257ee48bb8413726f2ee0604159540c1caa9db7ea4b49affcd7cab7390",
+      "sha256": "dd4ac4257ee48bb8413726f2ee0604159540c1caa9db7ea4b49affcd7cab7390"
+    },
+    "vendor/solidity/openzeppelin/token/ERC721/extensions/ERC721Enumerable.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol",
+      "upstreamSha256": "e09a099c8828bb8eb545968ecca3f5f0fe418618eabd93b40befd6ec7e5a88be",
+      "sha256": "e09a099c8828bb8eb545968ecca3f5f0fe418618eabd93b40befd6ec7e5a88be"
+    },
+    "vendor/solidity/openzeppelin/token/ERC721/extensions/ERC721Consecutive.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC721/extensions/ERC721Consecutive.sol",
+      "upstreamSha256": "84a5bee4b5a0ba7e3a59102475ffea35426535d91e1d07d6464d26dd7000d289",
+      "sha256": "84a5bee4b5a0ba7e3a59102475ffea35426535d91e1d07d6464d26dd7000d289"
+    },
+    "vendor/solidity/openzeppelin/token/ERC721/extensions/ERC721Wrapper.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC721/extensions/ERC721Wrapper.sol",
+      "upstreamSha256": "9e83b1bd0dde6b3d962adb4c6e277f789ddae595de5653dd02a37b74054223cb",
+      "sha256": "9e83b1bd0dde6b3d962adb4c6e277f789ddae595de5653dd02a37b74054223cb"
+    },
+    "vendor/solidity/openzeppelin/token/ERC721/extensions/ERC721Burnable.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+      "upstreamSha256": "e04aa070ad6f111fae49b96a056671f36307a93dd79b27612e72560e4a9749b2",
+      "sha256": "e04aa070ad6f111fae49b96a056671f36307a93dd79b27612e72560e4a9749b2"
+    },
+    "vendor/solidity/openzeppelin/token/ERC721/presets/ERC721PresetMinterPauserAutoId.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC721/presets/ERC721PresetMinterPauserAutoId.sol",
+      "upstreamSha256": "91339779247a030dd5901918fa312dc650aedfc03503a800bd66873386e3990c",
+      "sha256": "91339779247a030dd5901918fa312dc650aedfc03503a800bd66873386e3990c"
+    },
+    "vendor/solidity/openzeppelin/token/ERC1155/ERC1155.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC1155/ERC1155.sol",
+      "upstreamSha256": "639e43c4783084ae95ecf2d2239144e9bfbbd51091706abd26a36d5bf2875939",
+      "sha256": "639e43c4783084ae95ecf2d2239144e9bfbbd51091706abd26a36d5bf2875939"
+    },
+    "vendor/solidity/openzeppelin/token/ERC1155/IERC1155Receiver.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC1155/IERC1155Receiver.sol",
+      "upstreamSha256": "578834a1bcdac6a22de5e07ae63bbbd4d41615f35950afc6e6c068d92619b334",
+      "sha256": "578834a1bcdac6a22de5e07ae63bbbd4d41615f35950afc6e6c068d92619b334"
+    },
+    "vendor/solidity/openzeppelin/token/ERC1155/IERC1155.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC1155/IERC1155.sol",
+      "upstreamSha256": "11a1673048905dbd7703b3e23c22d612484db9c0b5a629c303ed609c04850f3b",
+      "sha256": "11a1673048905dbd7703b3e23c22d612484db9c0b5a629c303ed609c04850f3b"
+    },
+    "vendor/solidity/openzeppelin/token/ERC1155/utils/ERC1155Receiver.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC1155/utils/ERC1155Receiver.sol",
+      "upstreamSha256": "cf407886a0ce7e2af7efe7867e2d2864903426f63eeaa68eecf33d57f7d910c2",
+      "sha256": "cf407886a0ce7e2af7efe7867e2d2864903426f63eeaa68eecf33d57f7d910c2"
+    },
+    "vendor/solidity/openzeppelin/token/ERC1155/utils/ERC1155Holder.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC1155/utils/ERC1155Holder.sol",
+      "upstreamSha256": "a7ad38fa0a06fe6e24f81fee4f1fc3870767db96d1ba37df7be1199f7a3ace7f",
+      "sha256": "a7ad38fa0a06fe6e24f81fee4f1fc3870767db96d1ba37df7be1199f7a3ace7f"
+    },
+    "vendor/solidity/openzeppelin/token/ERC1155/extensions/ERC1155URIStorage.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155URIStorage.sol",
+      "upstreamSha256": "e2980574b400a9c0f65a4c5cea3503f5166f678de19e51090e969c0a5f930189",
+      "sha256": "e2980574b400a9c0f65a4c5cea3503f5166f678de19e51090e969c0a5f930189"
+    },
+    "vendor/solidity/openzeppelin/token/ERC1155/extensions/ERC1155Supply.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155Supply.sol",
+      "upstreamSha256": "ce8d753a23dead4d54cf60790112c53ca08f9da0794afb8439c50955aa34903e",
+      "sha256": "ce8d753a23dead4d54cf60790112c53ca08f9da0794afb8439c50955aa34903e"
+    },
+    "vendor/solidity/openzeppelin/token/ERC1155/extensions/ERC1155Pausable.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155Pausable.sol",
+      "upstreamSha256": "ea3edb7045031e085666218960d2e3fbd96e8bb36ae3d947449fe20fdb31672b",
+      "sha256": "ea3edb7045031e085666218960d2e3fbd96e8bb36ae3d947449fe20fdb31672b"
+    },
+    "vendor/solidity/openzeppelin/token/ERC1155/extensions/IERC1155MetadataURI.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol",
+      "upstreamSha256": "6987fbfa647d3da51e8c270371ac48c5fcd26fb046cf54644b39aa098ae30324",
+      "sha256": "6987fbfa647d3da51e8c270371ac48c5fcd26fb046cf54644b39aa098ae30324"
+    },
+    "vendor/solidity/openzeppelin/token/ERC1155/extensions/ERC1155Burnable.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155Burnable.sol",
+      "upstreamSha256": "6b7ff3fa5a97dbd121c2419ecef3b4379125cd64951c24e03dda33c6de5d1e37",
+      "sha256": "6b7ff3fa5a97dbd121c2419ecef3b4379125cd64951c24e03dda33c6de5d1e37"
+    },
+    "vendor/solidity/openzeppelin/token/ERC1155/presets/ERC1155PresetMinterPauser.sol": {
+      "upstream": "@openzeppelin/contracts/token/ERC1155/presets/ERC1155PresetMinterPauser.sol",
+      "upstreamSha256": "fad4992773f0e123d48f1224453ea4e87bf54d579989ff069858fd8bbdd75857",
+      "sha256": "fad4992773f0e123d48f1224453ea4e87bf54d579989ff069858fd8bbdd75857"
+    },
+    "vendor/solidity/openzeppelin/proxy/Clones.sol": {
+      "upstream": "@openzeppelin/contracts/proxy/Clones.sol",
+      "upstreamSha256": "fe993ed37cc4c1951524e9572498f897df00ea6f0525620fda327992f789261c",
+      "sha256": "fe993ed37cc4c1951524e9572498f897df00ea6f0525620fda327992f789261c"
+    },
+    "vendor/solidity/openzeppelin/proxy/Proxy.sol": {
+      "upstream": "@openzeppelin/contracts/proxy/Proxy.sol",
+      "upstreamSha256": "b3b79c95884570b4d01629e13985aea8a3c71bc37c257e1ea7fae9f23cffe8c4",
+      "sha256": "b3b79c95884570b4d01629e13985aea8a3c71bc37c257e1ea7fae9f23cffe8c4"
+    },
+    "vendor/solidity/openzeppelin/proxy/transparent/ProxyAdmin.sol": {
+      "upstream": "@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol",
+      "upstreamSha256": "e1f18ca464715b24fa20b49ca2b75aff9084a96bd7e726ace63097270719433b",
+      "sha256": "e1f18ca464715b24fa20b49ca2b75aff9084a96bd7e726ace63097270719433b"
+    },
+    "vendor/solidity/openzeppelin/proxy/transparent/TransparentUpgradeableProxy.sol": {
+      "upstream": "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol",
+      "upstreamSha256": "0096ba77d0ab032264ca69b5f05d1b21019f62fa0f3d77ba45fb82cd731fea16",
+      "sha256": "0096ba77d0ab032264ca69b5f05d1b21019f62fa0f3d77ba45fb82cd731fea16"
+    },
+    "vendor/solidity/openzeppelin/proxy/utils/Initializable.sol": {
+      "upstream": "@openzeppelin/contracts/proxy/utils/Initializable.sol",
+      "upstreamSha256": "6166f84ded782b5c1f471fc4aed9ee3d1fb74f55ec79e920f50510392e235eaa",
+      "sha256": "6166f84ded782b5c1f471fc4aed9ee3d1fb74f55ec79e920f50510392e235eaa"
+    },
+    "vendor/solidity/openzeppelin/proxy/utils/UUPSUpgradeable.sol": {
+      "upstream": "@openzeppelin/contracts/proxy/utils/UUPSUpgradeable.sol",
+      "upstreamSha256": "81fd7eff33a96b439a265d21a3244b4cfc2b674493420ae02e1f44088a8c84fc",
+      "sha256": "81fd7eff33a96b439a265d21a3244b4cfc2b674493420ae02e1f44088a8c84fc"
+    },
+    "vendor/solidity/openzeppelin/proxy/ERC1967/ERC1967Proxy.sol": {
+      "upstream": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol",
+      "upstreamSha256": "f64dc961f262436fc9fd3235f16a8495fd43c8f1d98d0a750a376ea8c8d5365d",
+      "sha256": "f64dc961f262436fc9fd3235f16a8495fd43c8f1d98d0a750a376ea8c8d5365d"
+    },
+    "vendor/solidity/openzeppelin/proxy/ERC1967/ERC1967Upgrade.sol": {
+      "upstream": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol",
+      "upstreamSha256": "05f8710ad6a17e156b51e2c5baa87fd6281c4be50a891ad717d6cfa628301da8",
+      "sha256": "05f8710ad6a17e156b51e2c5baa87fd6281c4be50a891ad717d6cfa628301da8"
+    },
+    "vendor/solidity/openzeppelin/proxy/beacon/IBeacon.sol": {
+      "upstream": "@openzeppelin/contracts/proxy/beacon/IBeacon.sol",
+      "upstreamSha256": "6afea1d83856ed8e0495fe78109f674f925cfdc79fe2e24e854b1237e742f011",
+      "sha256": "6afea1d83856ed8e0495fe78109f674f925cfdc79fe2e24e854b1237e742f011"
+    },
+    "vendor/solidity/openzeppelin/proxy/beacon/UpgradeableBeacon.sol": {
+      "upstream": "@openzeppelin/contracts/proxy/beacon/UpgradeableBeacon.sol",
+      "upstreamSha256": "62837cd05e75f09d5b7c02faf786032cafd749375f9bd710106fec84d77be149",
+      "sha256": "62837cd05e75f09d5b7c02faf786032cafd749375f9bd710106fec84d77be149"
+    },
+    "vendor/solidity/openzeppelin/proxy/beacon/BeaconProxy.sol": {
+      "upstream": "@openzeppelin/contracts/proxy/beacon/BeaconProxy.sol",
+      "upstreamSha256": "96140d8378a174f30d2a36859f63c39b331a91e3f59b330d9516530f5eca85ed",
+      "sha256": "96140d8378a174f30d2a36859f63c39b331a91e3f59b330d9516530f5eca85ed"
+    },
+    "vendor/solidity/openzeppelin/access/IAccessControlEnumerable.sol": {
+      "upstream": "@openzeppelin/contracts/access/IAccessControlEnumerable.sol",
+      "upstreamSha256": "655ab8dc2a9617376734d04ca293e099cc24f8ce893997e68c29cfebc4a61d39",
+      "sha256": "655ab8dc2a9617376734d04ca293e099cc24f8ce893997e68c29cfebc4a61d39"
+    },
+    "vendor/solidity/openzeppelin/access/AccessControlEnumerable.sol": {
+      "upstream": "@openzeppelin/contracts/access/AccessControlEnumerable.sol",
+      "upstreamSha256": "47861db7fa8d98b58cef570e7c8fca6af6d9d82e3ec0f525c3ad035cbfbed195",
+      "sha256": "47861db7fa8d98b58cef570e7c8fca6af6d9d82e3ec0f525c3ad035cbfbed195"
+    },
+    "vendor/solidity/openzeppelin/access/Ownable.sol": {
+      "upstream": "@openzeppelin/contracts/access/Ownable.sol",
+      "upstreamSha256": "a8e4e1ae19d9bd3e8b0a6d46577eec098c01fbaffd3ec1252fd20d799e73393b",
+      "sha256": "a8e4e1ae19d9bd3e8b0a6d46577eec098c01fbaffd3ec1252fd20d799e73393b"
+    },
+    "vendor/solidity/openzeppelin/access/AccessControlCrossChain.sol": {
+      "upstream": "@openzeppelin/contracts/access/AccessControlCrossChain.sol",
+      "upstreamSha256": "9e5777b879c823c7708177104cf699868c3205b5bb9e7c8bb909e3e7ce4ac8f4",
+      "sha256": "9e5777b879c823c7708177104cf699868c3205b5bb9e7c8bb909e3e7ce4ac8f4"
+    },
+    "vendor/solidity/openzeppelin/access/AccessControlDefaultAdminRules.sol": {
+      "upstream": "@openzeppelin/contracts/access/AccessControlDefaultAdminRules.sol",
+      "upstreamSha256": "abc499fbe077fbdde6a1b936adfcd694818ed5b117d5ae7c013ea76aebfe891c",
+      "sha256": "abc499fbe077fbdde6a1b936adfcd694818ed5b117d5ae7c013ea76aebfe891c"
+    },
+    "vendor/solidity/openzeppelin/access/IAccessControl.sol": {
+      "upstream": "@openzeppelin/contracts/access/IAccessControl.sol",
+      "upstreamSha256": "d03c1257f2094da6c86efa7aa09c1c07ebd33dd31046480c5097bc2542140e45",
+      "sha256": "d03c1257f2094da6c86efa7aa09c1c07ebd33dd31046480c5097bc2542140e45"
+    },
+    "vendor/solidity/openzeppelin/access/IAccessControlDefaultAdminRules.sol": {
+      "upstream": "@openzeppelin/contracts/access/IAccessControlDefaultAdminRules.sol",
+      "upstreamSha256": "443519102678a9bec4f518e1c8c583b9f31b085b4ffebda44c7107e5d9d1b25a",
+      "sha256": "443519102678a9bec4f518e1c8c583b9f31b085b4ffebda44c7107e5d9d1b25a"
+    },
+    "vendor/solidity/openzeppelin/access/Ownable2Step.sol": {
+      "upstream": "@openzeppelin/contracts/access/Ownable2Step.sol",
+      "upstreamSha256": "3e3bdb084bc14ade54e8259e710287956a7dbf2b2b4ad1e4cd8899d2293c7241",
+      "sha256": "3e3bdb084bc14ade54e8259e710287956a7dbf2b2b4ad1e4cd8899d2293c7241"
+    },
+    "vendor/solidity/openzeppelin/access/AccessControl.sol": {
+      "upstream": "@openzeppelin/contracts/access/AccessControl.sol",
+      "upstreamSha256": "afd98330d27bddff0db7cb8fcf42bd4766dda5f60b40871a3bec6220f9c9edf7",
+      "sha256": "afd98330d27bddff0db7cb8fcf42bd4766dda5f60b40871a3bec6220f9c9edf7"
+    },
+    "vendor/solidity/openzeppelin/security/ReentrancyGuard.sol": {
+      "upstream": "@openzeppelin/contracts/security/ReentrancyGuard.sol",
+      "upstreamSha256": "fa97ea556c990ee44f2ef4c80d4ef7d0af3f5f9b33a02142911140688106f5a9",
+      "sha256": "fa97ea556c990ee44f2ef4c80d4ef7d0af3f5f9b33a02142911140688106f5a9"
+    },
+    "vendor/solidity/openzeppelin/security/PullPayment.sol": {
+      "upstream": "@openzeppelin/contracts/security/PullPayment.sol",
+      "upstreamSha256": "4efc0a7457fd096202fdd5c78ba587103c385e7be5242ff4037f79553e05a5ed",
+      "sha256": "4efc0a7457fd096202fdd5c78ba587103c385e7be5242ff4037f79553e05a5ed"
+    },
+    "vendor/solidity/openzeppelin/security/Pausable.sol": {
+      "upstream": "@openzeppelin/contracts/security/Pausable.sol",
+      "upstreamSha256": "2072248d2f79e661c149fd6a6593a8a3f038466557c9b75e50e0b001bcb5cf97",
+      "sha256": "2072248d2f79e661c149fd6a6593a8a3f038466557c9b75e50e0b001bcb5cf97"
+    },
+    "vendor/solidity/openzeppelin/crosschain/errors.sol": {
+      "upstream": "@openzeppelin/contracts/crosschain/errors.sol",
+      "upstreamSha256": "9179023b078b920b413547940c2e1ae704958dd8f8085c0a8f5e4e70da08fa42",
+      "sha256": "9179023b078b920b413547940c2e1ae704958dd8f8085c0a8f5e4e70da08fa42"
+    },
+    "vendor/solidity/openzeppelin/crosschain/CrossChainEnabled.sol": {
+      "upstream": "@openzeppelin/contracts/crosschain/CrossChainEnabled.sol",
+      "upstreamSha256": "b8b5dc1017e4655b23aaa0aef0dfd85095f21a8f144ca439af20c6a7a118c590",
+      "sha256": "b8b5dc1017e4655b23aaa0aef0dfd85095f21a8f144ca439af20c6a7a118c590"
+    },
+    "vendor/solidity/openzeppelin/crosschain/optimism/CrossChainEnabledOptimism.sol": {
+      "upstream": "@openzeppelin/contracts/crosschain/optimism/CrossChainEnabledOptimism.sol",
+      "upstreamSha256": "363d519bca2eddc0e0780ac0ff8dc7d7deb6f8495d9d5896680f0fee5d5de8da",
+      "sha256": "363d519bca2eddc0e0780ac0ff8dc7d7deb6f8495d9d5896680f0fee5d5de8da"
+    },
+    "vendor/solidity/openzeppelin/crosschain/optimism/LibOptimism.sol": {
+      "upstream": "@openzeppelin/contracts/crosschain/optimism/LibOptimism.sol",
+      "upstreamSha256": "624fbb0338a275ce7905908799b0e20f3aded8e29ee74d4462fed38eccc73d63",
+      "sha256": "624fbb0338a275ce7905908799b0e20f3aded8e29ee74d4462fed38eccc73d63"
+    },
+    "vendor/solidity/openzeppelin/crosschain/arbitrum/CrossChainEnabledArbitrumL2.sol": {
+      "upstream": "@openzeppelin/contracts/crosschain/arbitrum/CrossChainEnabledArbitrumL2.sol",
+      "upstreamSha256": "30e16d485fa0b0dd97db83b2e45fe4776f7f6651a5c9610d2acc53b499b8b650",
+      "sha256": "30e16d485fa0b0dd97db83b2e45fe4776f7f6651a5c9610d2acc53b499b8b650"
+    },
+    "vendor/solidity/openzeppelin/crosschain/arbitrum/CrossChainEnabledArbitrumL1.sol": {
+      "upstream": "@openzeppelin/contracts/crosschain/arbitrum/CrossChainEnabledArbitrumL1.sol",
+      "upstreamSha256": "0c236f57964be2ba0172d719cb279a0e9b1d259a56eaf28dd32390bc3f9a20f1",
+      "sha256": "0c236f57964be2ba0172d719cb279a0e9b1d259a56eaf28dd32390bc3f9a20f1"
+    },
+    "vendor/solidity/openzeppelin/crosschain/arbitrum/LibArbitrumL2.sol": {
+      "upstream": "@openzeppelin/contracts/crosschain/arbitrum/LibArbitrumL2.sol",
+      "upstreamSha256": "4ebe35a8bb7736570137bd98f1613f83c333bb34100b3f36ed862d39ea0680bf",
+      "sha256": "4ebe35a8bb7736570137bd98f1613f83c333bb34100b3f36ed862d39ea0680bf"
+    },
+    "vendor/solidity/openzeppelin/crosschain/arbitrum/LibArbitrumL1.sol": {
+      "upstream": "@openzeppelin/contracts/crosschain/arbitrum/LibArbitrumL1.sol",
+      "upstreamSha256": "c3c60b1ce83755bfc205fbab9a563adaaf987efd276fad994e8184d5423b2b77",
+      "sha256": "c3c60b1ce83755bfc205fbab9a563adaaf987efd276fad994e8184d5423b2b77"
+    },
+    "vendor/solidity/openzeppelin/crosschain/polygon/CrossChainEnabledPolygonChild.sol": {
+      "upstream": "@openzeppelin/contracts/crosschain/polygon/CrossChainEnabledPolygonChild.sol",
+      "upstreamSha256": "b1aadc326534e3924d5e4e95675eeed585fc67ed8e2e15718c57c0ac27621ab7",
+      "sha256": "b1aadc326534e3924d5e4e95675eeed585fc67ed8e2e15718c57c0ac27621ab7"
+    },
+    "vendor/solidity/openzeppelin/crosschain/amb/CrossChainEnabledAMB.sol": {
+      "upstream": "@openzeppelin/contracts/crosschain/amb/CrossChainEnabledAMB.sol",
+      "upstreamSha256": "2e2180809d76823c1d0874138909c9fe8046877a18a85af9be8fa2906b4f0a9e",
+      "sha256": "2e2180809d76823c1d0874138909c9fe8046877a18a85af9be8fa2906b4f0a9e"
+    },
+    "vendor/solidity/openzeppelin/crosschain/amb/LibAMB.sol": {
+      "upstream": "@openzeppelin/contracts/crosschain/amb/LibAMB.sol",
+      "upstreamSha256": "afa8609fee251ad9bf509ae1992b10329146f1ec233a3af8eba799f0b20947b9",
+      "sha256": "afa8609fee251ad9bf509ae1992b10329146f1ec233a3af8eba799f0b20947b9"
+    },
+    "vendor/solidity/openzeppelin/utils/Checkpoints.sol": {
+      "upstream": "@openzeppelin/contracts/utils/Checkpoints.sol",
+      "upstreamSha256": "ae9c074968d86e2d5a4b1629a0577da55b5c3be43a54823f3ad1de9a96800ec5",
+      "sha256": "ae9c074968d86e2d5a4b1629a0577da55b5c3be43a54823f3ad1de9a96800ec5"
+    },
+    "vendor/solidity/openzeppelin/utils/Counters.sol": {
+      "upstream": "@openzeppelin/contracts/utils/Counters.sol",
+      "upstreamSha256": "2fdcb1343e5621385b62e57b5c7775607c272122b6f2dc77da8f84828aa40cd0",
+      "sha256": "2fdcb1343e5621385b62e57b5c7775607c272122b6f2dc77da8f84828aa40cd0"
+    },
+    "vendor/solidity/openzeppelin/utils/Timers.sol": {
+      "upstream": "@openzeppelin/contracts/utils/Timers.sol",
+      "upstreamSha256": "02659effc9da09d95203f5248e52b690262f3fc27586cc28615e41f25a6010cc",
+      "sha256": "02659effc9da09d95203f5248e52b690262f3fc27586cc28615e41f25a6010cc"
+    },
+    "vendor/solidity/openzeppelin/utils/Arrays.sol": {
+      "upstream": "@openzeppelin/contracts/utils/Arrays.sol",
+      "upstreamSha256": "b8f5c7ff6a9fe9247825eea832fcc3816b0b59c16bba3e8996bff9116e278ea0",
+      "sha256": "b8f5c7ff6a9fe9247825eea832fcc3816b0b59c16bba3e8996bff9116e278ea0"
+    },
+    "vendor/solidity/openzeppelin/utils/Address.sol": {
+      "upstream": "@openzeppelin/contracts/utils/Address.sol",
+      "upstreamSha256": "8b85a2463eda119c2f42c34fa3d942b61aee65df381f48ed436fe8edb3a7d602",
+      "sha256": "8b85a2463eda119c2f42c34fa3d942b61aee65df381f48ed436fe8edb3a7d602"
+    },
+    "vendor/solidity/openzeppelin/utils/StorageSlot.sol": {
+      "upstream": "@openzeppelin/contracts/utils/StorageSlot.sol",
+      "upstreamSha256": "51c993d87ee6096af06f8701d8497272751c8cc9c9c2b31e67a3087d5f2302df",
+      "sha256": "51c993d87ee6096af06f8701d8497272751c8cc9c9c2b31e67a3087d5f2302df"
+    },
+    "vendor/solidity/openzeppelin/utils/Multicall.sol": {
+      "upstream": "@openzeppelin/contracts/utils/Multicall.sol",
+      "upstreamSha256": "daa8d676f9046565cffe8cdb29d6b951955612140ceb5de174cc6632308e94ac",
+      "sha256": "daa8d676f9046565cffe8cdb29d6b951955612140ceb5de174cc6632308e94ac"
+    },
+    "vendor/solidity/openzeppelin/utils/Create2.sol": {
+      "upstream": "@openzeppelin/contracts/utils/Create2.sol",
+      "upstreamSha256": "88df1c0994ef0f1a7b25528d8bbe5c462bad3903517a2e3a4a194547397377a5",
+      "sha256": "88df1c0994ef0f1a7b25528d8bbe5c462bad3903517a2e3a4a194547397377a5"
+    },
+    "vendor/solidity/openzeppelin/utils/ShortStrings.sol": {
+      "upstream": "@openzeppelin/contracts/utils/ShortStrings.sol",
+      "upstreamSha256": "0f1abe1770f7e80f0b9221aac780424a42e5c64b9814aa735d28115a0f549915",
+      "sha256": "0f1abe1770f7e80f0b9221aac780424a42e5c64b9814aa735d28115a0f549915"
+    },
+    "vendor/solidity/openzeppelin/utils/Context.sol": {
+      "upstream": "@openzeppelin/contracts/utils/Context.sol",
+      "upstreamSha256": "b2cfee351bcafd0f8f27c72d76c054df9b571b62cfac4781ed12c86354e2a56c",
+      "sha256": "b2cfee351bcafd0f8f27c72d76c054df9b571b62cfac4781ed12c86354e2a56c"
+    },
+    "vendor/solidity/openzeppelin/utils/Strings.sol": {
+      "upstream": "@openzeppelin/contracts/utils/Strings.sol",
+      "upstreamSha256": "cb2df477077a5963ab50a52768cb74ec6f32177177a78611ddbbe2c07e2d36de",
+      "sha256": "cb2df477077a5963ab50a52768cb74ec6f32177177a78611ddbbe2c07e2d36de"
+    },
+    "vendor/solidity/openzeppelin/utils/Base64.sol": {
+      "upstream": "@openzeppelin/contracts/utils/Base64.sol",
+      "upstreamSha256": "f2e03a1a5df36e5ac5fe80391ce9c7f5b973c6122df6b82274caad1ef3f3a5f5",
+      "sha256": "f2e03a1a5df36e5ac5fe80391ce9c7f5b973c6122df6b82274caad1ef3f3a5f5"
+    },
+    "vendor/solidity/openzeppelin/utils/cryptography/ECDSA.sol": {
+      "upstream": "@openzeppelin/contracts/utils/cryptography/ECDSA.sol",
+      "upstreamSha256": "445963619903cee339e49aa2d7a0b07cfad90959529fff136394429c4a92d554",
+      "sha256": "445963619903cee339e49aa2d7a0b07cfad90959529fff136394429c4a92d554"
+    },
+    "vendor/solidity/openzeppelin/utils/cryptography/SignatureChecker.sol": {
+      "upstream": "@openzeppelin/contracts/utils/cryptography/SignatureChecker.sol",
+      "upstreamSha256": "24956a2dcae4efa4f49e76d92504ffea66a11470f3c1033846839b1d9b646ed0",
+      "sha256": "24956a2dcae4efa4f49e76d92504ffea66a11470f3c1033846839b1d9b646ed0"
+    },
+    "vendor/solidity/openzeppelin/utils/cryptography/draft-EIP712.sol": {
+      "upstream": "@openzeppelin/contracts/utils/cryptography/draft-EIP712.sol",
+      "upstreamSha256": "ad9a18d797f24a571f15866d4e3f2dc53debf949b2c1c07de019f04f3de7ef70",
+      "sha256": "ad9a18d797f24a571f15866d4e3f2dc53debf949b2c1c07de019f04f3de7ef70"
+    },
+    "vendor/solidity/openzeppelin/utils/cryptography/MerkleProof.sol": {
+      "upstream": "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol",
+      "upstreamSha256": "878acde5ffd208c8a7e0081cd1b7cdc87d15c51aa41d9f32cacd93b129f89df3",
+      "sha256": "878acde5ffd208c8a7e0081cd1b7cdc87d15c51aa41d9f32cacd93b129f89df3"
+    },
+    "vendor/solidity/openzeppelin/utils/cryptography/EIP712.sol": {
+      "upstream": "@openzeppelin/contracts/utils/cryptography/EIP712.sol",
+      "upstreamSha256": "6403cb83154d37ce7030e1b94f07766a6dd20835c4a691bcff87870810df15e2",
+      "sha256": "6403cb83154d37ce7030e1b94f07766a6dd20835c4a691bcff87870810df15e2"
+    },
+    "vendor/solidity/openzeppelin/utils/introspection/IERC1820Registry.sol": {
+      "upstream": "@openzeppelin/contracts/utils/introspection/IERC1820Registry.sol",
+      "upstreamSha256": "a6a3f54e9b52adc1b18642763d069a3e3be7a735b7cdca48f1f2c2fff0bd1930",
+      "sha256": "a6a3f54e9b52adc1b18642763d069a3e3be7a735b7cdca48f1f2c2fff0bd1930"
+    },
+    "vendor/solidity/openzeppelin/utils/introspection/IERC1820Implementer.sol": {
+      "upstream": "@openzeppelin/contracts/utils/introspection/IERC1820Implementer.sol",
+      "upstreamSha256": "319a53f5b8ed9a46e5c11ba5ea8c2e1e7337a2fef4ac409d7e9ed6c418288112",
+      "sha256": "319a53f5b8ed9a46e5c11ba5ea8c2e1e7337a2fef4ac409d7e9ed6c418288112"
+    },
+    "vendor/solidity/openzeppelin/utils/introspection/ERC165Checker.sol": {
+      "upstream": "@openzeppelin/contracts/utils/introspection/ERC165Checker.sol",
+      "upstreamSha256": "392034d759da4cfd866690b5ca71576a35d79c51055046ef0c591702561b8778",
+      "sha256": "392034d759da4cfd866690b5ca71576a35d79c51055046ef0c591702561b8778"
+    },
+    "vendor/solidity/openzeppelin/utils/introspection/ERC165Storage.sol": {
+      "upstream": "@openzeppelin/contracts/utils/introspection/ERC165Storage.sol",
+      "upstreamSha256": "48cbe34481e0876d1c672ce3604f1202a87b2eca2e3f8fb73f48d6f46e7d18fe",
+      "sha256": "48cbe34481e0876d1c672ce3604f1202a87b2eca2e3f8fb73f48d6f46e7d18fe"
+    },
+    "vendor/solidity/openzeppelin/utils/introspection/ERC1820Implementer.sol": {
+      "upstream": "@openzeppelin/contracts/utils/introspection/ERC1820Implementer.sol",
+      "upstreamSha256": "c508d711a76f7e08a165823a70e332544ac0966960ebc6f1a76c7be8a3e3f957",
+      "sha256": "c508d711a76f7e08a165823a70e332544ac0966960ebc6f1a76c7be8a3e3f957"
+    },
+    "vendor/solidity/openzeppelin/utils/introspection/ERC165.sol": {
+      "upstream": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+      "upstreamSha256": "8806a632d7b656cadb8133ff8f2acae4405b3a64d8709d93b0fa6a216a8a6154",
+      "sha256": "8806a632d7b656cadb8133ff8f2acae4405b3a64d8709d93b0fa6a216a8a6154"
+    },
+    "vendor/solidity/openzeppelin/utils/introspection/IERC165.sol": {
+      "upstream": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+      "upstreamSha256": "701e025d13ec6be09ae892eb029cd83b3064325801d73654847a5fb11c58b1e5",
+      "sha256": "701e025d13ec6be09ae892eb029cd83b3064325801d73654847a5fb11c58b1e5"
+    },
+    "vendor/solidity/openzeppelin/utils/math/SafeMath.sol": {
+      "upstream": "@openzeppelin/contracts/utils/math/SafeMath.sol",
+      "upstreamSha256": "fc16aa4564878e1bb65740239d0c1422451cd32136306626ac37f5d5e0606a7b",
+      "sha256": "fc16aa4564878e1bb65740239d0c1422451cd32136306626ac37f5d5e0606a7b"
+    },
+    "vendor/solidity/openzeppelin/utils/math/SignedMath.sol": {
+      "upstream": "@openzeppelin/contracts/utils/math/SignedMath.sol",
+      "upstreamSha256": "420a5a5d8d94611a04b39d6cf5f02492552ed4257ea82aba3c765b1ad52f77f6",
+      "sha256": "420a5a5d8d94611a04b39d6cf5f02492552ed4257ea82aba3c765b1ad52f77f6"
+    },
+    "vendor/solidity/openzeppelin/utils/math/SignedSafeMath.sol": {
+      "upstream": "@openzeppelin/contracts/utils/math/SignedSafeMath.sol",
+      "upstreamSha256": "a005ce8725a58a6729474aeead7b898440e44ff33dc723cd33a243668e9ad8ba",
+      "sha256": "a005ce8725a58a6729474aeead7b898440e44ff33dc723cd33a243668e9ad8ba"
+    },
+    "vendor/solidity/openzeppelin/utils/math/Math.sol": {
+      "upstream": "@openzeppelin/contracts/utils/math/Math.sol",
+      "upstreamSha256": "85a2caf3bd06579fb55236398c1321e15fd524a8fe140dff748c0f73d7a52345",
+      "sha256": "85a2caf3bd06579fb55236398c1321e15fd524a8fe140dff748c0f73d7a52345"
+    },
+    "vendor/solidity/openzeppelin/utils/math/SafeCast.sol": {
+      "upstream": "@openzeppelin/contracts/utils/math/SafeCast.sol",
+      "upstreamSha256": "a5dab332e2caa1db5aae709693e59431132aa720528d0245a647dde6e93d7436",
+      "sha256": "a5dab332e2caa1db5aae709693e59431132aa720528d0245a647dde6e93d7436"
+    },
+    "vendor/solidity/openzeppelin/utils/structs/BitMaps.sol": {
+      "upstream": "@openzeppelin/contracts/utils/structs/BitMaps.sol",
+      "upstreamSha256": "75fb2f4e09b27ebe9db152607b6e89a2c76b406d76f0d2e1f484a671e5ff9472",
+      "sha256": "75fb2f4e09b27ebe9db152607b6e89a2c76b406d76f0d2e1f484a671e5ff9472"
+    },
+    "vendor/solidity/openzeppelin/utils/structs/DoubleEndedQueue.sol": {
+      "upstream": "@openzeppelin/contracts/utils/structs/DoubleEndedQueue.sol",
+      "upstreamSha256": "a8d06e25f59c254d612f90d7cf88b967bc4ca6d5b3fa9d0b1c0e5c724afb90ff",
+      "sha256": "a8d06e25f59c254d612f90d7cf88b967bc4ca6d5b3fa9d0b1c0e5c724afb90ff"
+    },
+    "vendor/solidity/openzeppelin/utils/structs/EnumerableMap.sol": {
+      "upstream": "@openzeppelin/contracts/utils/structs/EnumerableMap.sol",
+      "upstreamSha256": "cb94aa2c46a88c4446ea79f9c5b1ceb931ffb7d87075f44d2d8756d4444da9d1",
+      "sha256": "cb94aa2c46a88c4446ea79f9c5b1ceb931ffb7d87075f44d2d8756d4444da9d1"
+    },
+    "vendor/solidity/openzeppelin/utils/structs/EnumerableSet.sol": {
+      "upstream": "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+      "upstreamSha256": "a64e5d0e83019d9caa51e6fe6f68ac54b583ac15792b8557cb8e4fab20711b9f",
+      "sha256": "a64e5d0e83019d9caa51e6fe6f68ac54b583ac15792b8557cb8e4fab20711b9f"
+    },
+    "vendor/solidity/openzeppelin/utils/escrow/Escrow.sol": {
+      "upstream": "@openzeppelin/contracts/utils/escrow/Escrow.sol",
+      "upstreamSha256": "68f2a9b60bbce2137c3da8d2fb157021c304845a5262d570d8a3da3ded47369a",
+      "sha256": "68f2a9b60bbce2137c3da8d2fb157021c304845a5262d570d8a3da3ded47369a"
+    },
+    "vendor/solidity/openzeppelin/utils/escrow/RefundEscrow.sol": {
+      "upstream": "@openzeppelin/contracts/utils/escrow/RefundEscrow.sol",
+      "upstreamSha256": "6c4195b910f603f87cec3f758e377e623af559c51726137832d178deebe65919",
+      "sha256": "6c4195b910f603f87cec3f758e377e623af559c51726137832d178deebe65919"
+    },
+    "vendor/solidity/openzeppelin/utils/escrow/ConditionalEscrow.sol": {
+      "upstream": "@openzeppelin/contracts/utils/escrow/ConditionalEscrow.sol",
+      "upstreamSha256": "6cf44a391867b4de1d90f32151ac6d306e0d0cfc758a4448f3ed10a5256a77d3",
+      "sha256": "6cf44a391867b4de1d90f32151ac6d306e0d0cfc758a4448f3ed10a5256a77d3"
+    },
+    "vendor/solidity/openzeppelin/metatx/ERC2771Context.sol": {
+      "upstream": "@openzeppelin/contracts/metatx/ERC2771Context.sol",
+      "upstreamSha256": "75fa362ecb387d7241f38f9ac02753e65f31ceb8f24d7c6e594be5fbba0c3fb2",
+      "sha256": "75fa362ecb387d7241f38f9ac02753e65f31ceb8f24d7c6e594be5fbba0c3fb2"
+    },
+    "vendor/solidity/openzeppelin/metatx/MinimalForwarder.sol": {
+      "upstream": "@openzeppelin/contracts/metatx/MinimalForwarder.sol",
+      "upstreamSha256": "c2325b3f1c403924f2323b8b50239e2589fdd6fdb1318017eb98cc700b11db52",
+      "sha256": "c2325b3f1c403924f2323b8b50239e2589fdd6fdb1318017eb98cc700b11db52"
+    },
+    "vendor/solidity/openzeppelin/governance/Governor.sol": {
+      "upstream": "@openzeppelin/contracts/governance/Governor.sol",
+      "upstreamSha256": "c643af54abf6e5949d1ecea88577e76afe465e686eda3031c283f2f20d3f70ce",
+      "sha256": "c643af54abf6e5949d1ecea88577e76afe465e686eda3031c283f2f20d3f70ce"
+    },
+    "vendor/solidity/openzeppelin/governance/IGovernor.sol": {
+      "upstream": "@openzeppelin/contracts/governance/IGovernor.sol",
+      "upstreamSha256": "d6159da9f27ae152734747cc7a24b1e848ba48879794a2dd98ed61851203b4ec",
+      "sha256": "d6159da9f27ae152734747cc7a24b1e848ba48879794a2dd98ed61851203b4ec"
+    },
+    "vendor/solidity/openzeppelin/governance/TimelockController.sol": {
+      "upstream": "@openzeppelin/contracts/governance/TimelockController.sol",
+      "upstreamSha256": "a0d206c08ad337754df71b731e827f35e6e5d635630b6c930fb54d4d72aa9d66",
+      "sha256": "a0d206c08ad337754df71b731e827f35e6e5d635630b6c930fb54d4d72aa9d66"
+    },
+    "vendor/solidity/openzeppelin/governance/compatibility/IGovernorCompatibilityBravo.sol": {
+      "upstream": "@openzeppelin/contracts/governance/compatibility/IGovernorCompatibilityBravo.sol",
+      "upstreamSha256": "d3697570d40b9df5a1a9ca2d5c8c88a1bfbe092841d8b7cd79d7ff341a6cce21",
+      "sha256": "d3697570d40b9df5a1a9ca2d5c8c88a1bfbe092841d8b7cd79d7ff341a6cce21"
+    },
+    "vendor/solidity/openzeppelin/governance/compatibility/GovernorCompatibilityBravo.sol": {
+      "upstream": "@openzeppelin/contracts/governance/compatibility/GovernorCompatibilityBravo.sol",
+      "upstreamSha256": "fc5315944b59316b6364bb0cde69ed4e2a6f40b8807cd2f9f3c65edc53c338dd",
+      "sha256": "fc5315944b59316b6364bb0cde69ed4e2a6f40b8807cd2f9f3c65edc53c338dd"
+    },
+    "vendor/solidity/openzeppelin/governance/utils/Votes.sol": {
+      "upstream": "@openzeppelin/contracts/governance/utils/Votes.sol",
+      "upstreamSha256": "95716c694e1029d95c9ae7dd7fb0307e42db95644fcb56ebf4e238d903a88c16",
+      "sha256": "95716c694e1029d95c9ae7dd7fb0307e42db95644fcb56ebf4e238d903a88c16"
+    },
+    "vendor/solidity/openzeppelin/governance/utils/IVotes.sol": {
+      "upstream": "@openzeppelin/contracts/governance/utils/IVotes.sol",
+      "upstreamSha256": "5fdb83e09b93aaa36987b83e4929c0badb7c0dbe12b8c94b5621a2a266e21419",
+      "sha256": "5fdb83e09b93aaa36987b83e4929c0badb7c0dbe12b8c94b5621a2a266e21419"
+    },
+    "vendor/solidity/openzeppelin/governance/extensions/GovernorTimelockCompound.sol": {
+      "upstream": "@openzeppelin/contracts/governance/extensions/GovernorTimelockCompound.sol",
+      "upstreamSha256": "4fcfb37a005254464886f5aea08f369c86c981fb45633c6bc1057cc08ec146cd",
+      "sha256": "4fcfb37a005254464886f5aea08f369c86c981fb45633c6bc1057cc08ec146cd"
+    },
+    "vendor/solidity/openzeppelin/governance/extensions/IGovernorTimelock.sol": {
+      "upstream": "@openzeppelin/contracts/governance/extensions/IGovernorTimelock.sol",
+      "upstreamSha256": "f6aa0fa7db695c5684bf5107c85856c96e8611657ba06e40076ba96cd82daa22",
+      "sha256": "f6aa0fa7db695c5684bf5107c85856c96e8611657ba06e40076ba96cd82daa22"
+    },
+    "vendor/solidity/openzeppelin/governance/extensions/GovernorCountingSimple.sol": {
+      "upstream": "@openzeppelin/contracts/governance/extensions/GovernorCountingSimple.sol",
+      "upstreamSha256": "62afd2916da8aeb136d48835beb01fad221d7631fedc06f631f737bec9c4cc4f",
+      "sha256": "62afd2916da8aeb136d48835beb01fad221d7631fedc06f631f737bec9c4cc4f"
+    },
+    "vendor/solidity/openzeppelin/governance/extensions/GovernorTimelockControl.sol": {
+      "upstream": "@openzeppelin/contracts/governance/extensions/GovernorTimelockControl.sol",
+      "upstreamSha256": "9faee487b22e748845966bea0e02eb7297c471f14500fbb4be01930c945083c8",
+      "sha256": "9faee487b22e748845966bea0e02eb7297c471f14500fbb4be01930c945083c8"
+    },
+    "vendor/solidity/openzeppelin/governance/extensions/GovernorProposalThreshold.sol": {
+      "upstream": "@openzeppelin/contracts/governance/extensions/GovernorProposalThreshold.sol",
+      "upstreamSha256": "1b7a336627a900892e2b6e4f9f74f1e99a5644110ce48646e5f1aab918da91d8",
+      "sha256": "1b7a336627a900892e2b6e4f9f74f1e99a5644110ce48646e5f1aab918da91d8"
+    },
+    "vendor/solidity/openzeppelin/governance/extensions/GovernorVotesComp.sol": {
+      "upstream": "@openzeppelin/contracts/governance/extensions/GovernorVotesComp.sol",
+      "upstreamSha256": "681ff500fddb11968c27f83a6ee6bcc3efde15dc61bf978460c4ee33c5075421",
+      "sha256": "681ff500fddb11968c27f83a6ee6bcc3efde15dc61bf978460c4ee33c5075421"
+    },
+    "vendor/solidity/openzeppelin/governance/extensions/GovernorPreventLateQuorum.sol": {
+      "upstream": "@openzeppelin/contracts/governance/extensions/GovernorPreventLateQuorum.sol",
+      "upstreamSha256": "226b9666085dd2dc00934b68fb7ca7fea0b1e665964ba7c6e075880563f3286b",
+      "sha256": "226b9666085dd2dc00934b68fb7ca7fea0b1e665964ba7c6e075880563f3286b"
+    },
+    "vendor/solidity/openzeppelin/governance/extensions/GovernorVotes.sol": {
+      "upstream": "@openzeppelin/contracts/governance/extensions/GovernorVotes.sol",
+      "upstreamSha256": "351df0d813b6a0a254f193b01ded31902aef165b5cc97609ac61df152f74a5eb",
+      "sha256": "351df0d813b6a0a254f193b01ded31902aef165b5cc97609ac61df152f74a5eb"
+    },
+    "vendor/solidity/openzeppelin/governance/extensions/GovernorSettings.sol": {
+      "upstream": "@openzeppelin/contracts/governance/extensions/GovernorSettings.sol",
+      "upstreamSha256": "1cd3c1319d4dc6ad85172e5a0d79f9f209357f433ae78ba750cdd5fc96e5800d",
+      "sha256": "1cd3c1319d4dc6ad85172e5a0d79f9f209357f433ae78ba750cdd5fc96e5800d"
+    },
+    "vendor/solidity/openzeppelin/governance/extensions/GovernorVotesQuorumFraction.sol": {
+      "upstream": "@openzeppelin/contracts/governance/extensions/GovernorVotesQuorumFraction.sol",
+      "upstreamSha256": "118be8602eb3fb17d339f606cf720935416cf5cfa50a622ca5290eb81737bc82",
+      "sha256": "118be8602eb3fb17d339f606cf720935416cf5cfa50a622ca5290eb81737bc82"
+    },
+    "vendor/solidity/openzeppelin/finance/PaymentSplitter.sol": {
+      "upstream": "@openzeppelin/contracts/finance/PaymentSplitter.sol",
+      "upstreamSha256": "1ca5d06c0ae663c1db503bf13267d158a85af84755eddbbcc710def26a45dffb",
+      "sha256": "1ca5d06c0ae663c1db503bf13267d158a85af84755eddbbcc710def26a45dffb"
+    },
+    "vendor/solidity/openzeppelin/finance/VestingWallet.sol": {
+      "upstream": "@openzeppelin/contracts/finance/VestingWallet.sol",
+      "upstreamSha256": "1aae36ac7a654f2583926e40c1f8e5d6e44c416b022c00d21bf089cababd8d9c",
+      "sha256": "1aae36ac7a654f2583926e40c1f8e5d6e44c416b022c00d21bf089cababd8d9c"
+    },
+    "vendor/solidity/openzeppelin/vendor/optimism/ICrossDomainMessenger.sol": {
+      "upstream": "@openzeppelin/contracts/vendor/optimism/ICrossDomainMessenger.sol",
+      "upstreamSha256": "acf7d9cc2ed0a950a5586582ac926a33272bf9c3a037c82b06502bff8f864398",
+      "sha256": "acf7d9cc2ed0a950a5586582ac926a33272bf9c3a037c82b06502bff8f864398"
+    },
+    "vendor/solidity/openzeppelin/vendor/arbitrum/IOutbox.sol": {
+      "upstream": "@openzeppelin/contracts/vendor/arbitrum/IOutbox.sol",
+      "upstreamSha256": "27c2e0d2652ffa203c5a5e39f4162ff009345a611ba4a6c20a97e2746f3f7ee9",
+      "sha256": "27c2e0d2652ffa203c5a5e39f4162ff009345a611ba4a6c20a97e2746f3f7ee9"
+    },
+    "vendor/solidity/openzeppelin/vendor/arbitrum/IDelayedMessageProvider.sol": {
+      "upstream": "@openzeppelin/contracts/vendor/arbitrum/IDelayedMessageProvider.sol",
+      "upstreamSha256": "78144b2ef988063aa5c32e05cf9f97ac7c064b4705d515ea3985cf564dff2f62",
+      "sha256": "78144b2ef988063aa5c32e05cf9f97ac7c064b4705d515ea3985cf564dff2f62"
+    },
+    "vendor/solidity/openzeppelin/vendor/arbitrum/IInbox.sol": {
+      "upstream": "@openzeppelin/contracts/vendor/arbitrum/IInbox.sol",
+      "upstreamSha256": "7c7f5e668a9200be0010526c051837093dc3708e78e2d7c001c8c694de03dd19",
+      "sha256": "7c7f5e668a9200be0010526c051837093dc3708e78e2d7c001c8c694de03dd19"
+    },
+    "vendor/solidity/openzeppelin/vendor/arbitrum/IBridge.sol": {
+      "upstream": "@openzeppelin/contracts/vendor/arbitrum/IBridge.sol",
+      "upstreamSha256": "689db58832cb6a563b4d5afd4dd1149c439e34c04efcbb7050cf8cee56d8a88b",
+      "sha256": "689db58832cb6a563b4d5afd4dd1149c439e34c04efcbb7050cf8cee56d8a88b"
+    },
+    "vendor/solidity/openzeppelin/vendor/arbitrum/IArbSys.sol": {
+      "upstream": "@openzeppelin/contracts/vendor/arbitrum/IArbSys.sol",
+      "upstreamSha256": "383a1a1bd58c317be4a91399968a603abf3798922ec072196a24976ec7e7c2ff",
+      "sha256": "383a1a1bd58c317be4a91399968a603abf3798922ec072196a24976ec7e7c2ff"
+    },
+    "vendor/solidity/openzeppelin/vendor/polygon/IFxMessageProcessor.sol": {
+      "upstream": "@openzeppelin/contracts/vendor/polygon/IFxMessageProcessor.sol",
+      "upstreamSha256": "f98763dd6d33c9aad9dfc43cf9667f2d315d48d11d14152ad94cf1b5debc2539",
+      "sha256": "f98763dd6d33c9aad9dfc43cf9667f2d315d48d11d14152ad94cf1b5debc2539"
+    },
+    "vendor/solidity/openzeppelin/vendor/amb/IAMB.sol": {
+      "upstream": "@openzeppelin/contracts/vendor/amb/IAMB.sol",
+      "upstreamSha256": "11b281b922cbdcf65a1462671bb3729313c029d356aab153cc7101244220bd7f",
+      "sha256": "11b281b922cbdcf65a1462671bb3729313c029d356aab153cc7101244220bd7f"
+    },
+    "vendor/solidity/openzeppelin/vendor/compound/ICompoundTimelock.sol": {
+      "upstream": "@openzeppelin/contracts/vendor/compound/ICompoundTimelock.sol",
+      "upstreamSha256": "01dc103ee0c9c3df9158a5b74cd6b5e705bf14d355e2d7f6780935801b6e9ead",
+      "sha256": "01dc103ee0c9c3df9158a5b74cd6b5e705bf14d355e2d7f6780935801b6e9ead"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC777Recipient.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC777Recipient.sol",
+      "upstreamSha256": "9e24932997ce65ca94f74fec4c5808cd1fc0bd1f28141b5d53960b5fde2bff48",
+      "sha256": "9e24932997ce65ca94f74fec4c5808cd1fc0bd1f28141b5d53960b5fde2bff48"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC721Enumerable.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC721Enumerable.sol",
+      "upstreamSha256": "1c76b9d1c266427220d98b97b824169b5772c7866938332481f2f3e2075bed81",
+      "sha256": "1c76b9d1c266427220d98b97b824169b5772c7866938332481f2f3e2075bed81"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC721Metadata.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC721Metadata.sol",
+      "upstreamSha256": "343203e6ad059b9689698e04835f608ad8aa70f67db28ac4d38acaf4b7448ef5",
+      "sha256": "343203e6ad059b9689698e04835f608ad8aa70f67db28ac4d38acaf4b7448ef5"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC20.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC20.sol",
+      "upstreamSha256": "1e78c90db4e4838c0a603bfbd2bafa2c38ba997769043e2a6045ad9e73764b60",
+      "sha256": "1e78c90db4e4838c0a603bfbd2bafa2c38ba997769043e2a6045ad9e73764b60"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC5805.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC5805.sol",
+      "upstreamSha256": "0c84f6635322f7ac57baf8f2b8ea5221467632c3db7feaad39633bfd9be9f540",
+      "sha256": "0c84f6635322f7ac57baf8f2b8ea5221467632c3db7feaad39633bfd9be9f540"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC2612.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC2612.sol",
+      "upstreamSha256": "41f516d93e1097f4b4cc2a031f132b5ff01ab0a4d07d97be60cfbc7b3d6eb09e",
+      "sha256": "41f516d93e1097f4b4cc2a031f132b5ff01ab0a4d07d97be60cfbc7b3d6eb09e"
+    },
+    "vendor/solidity/openzeppelin/interfaces/draft-IERC1822.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/draft-IERC1822.sol",
+      "upstreamSha256": "38728bce05e2b518d0ef66d514dbfcdee5555aeac2d57729480bf1409ee63630",
+      "sha256": "38728bce05e2b518d0ef66d514dbfcdee5555aeac2d57729480bf1409ee63630"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC777Sender.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC777Sender.sol",
+      "upstreamSha256": "deca71d992beca692243531b8462ddb570d2d82d6fbf33fe87b54bd27c6ae9af",
+      "sha256": "deca71d992beca692243531b8462ddb570d2d82d6fbf33fe87b54bd27c6ae9af"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC1155Receiver.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC1155Receiver.sol",
+      "upstreamSha256": "a111232530c2b6912e8f011bc8944eceda9810d8dea6c1d819eea51f8459d7ec",
+      "sha256": "a111232530c2b6912e8f011bc8944eceda9810d8dea6c1d819eea51f8459d7ec"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC721Receiver.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC721Receiver.sol",
+      "upstreamSha256": "6a82f23f14229fb05150226844acf410564a1e4a0f31774192b842a8dd977f5f",
+      "sha256": "6a82f23f14229fb05150226844acf410564a1e4a0f31774192b842a8dd977f5f"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC2981.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC2981.sol",
+      "upstreamSha256": "18d03527c5c59844ffc9bce0a37af282c96320fd97667c9a8f5648904252f4fa",
+      "sha256": "18d03527c5c59844ffc9bce0a37af282c96320fd97667c9a8f5648904252f4fa"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC3156FlashBorrower.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC3156FlashBorrower.sol",
+      "upstreamSha256": "56dab721add92e50c690cfe67ef81cff544264e50d23699162e52b296fa17e99",
+      "sha256": "56dab721add92e50c690cfe67ef81cff544264e50d23699162e52b296fa17e99"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC1820Registry.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC1820Registry.sol",
+      "upstreamSha256": "834a57c1723d0e0d1c902752d11e28e2af3b271e7f518f9296b02da86bc1f53e",
+      "sha256": "834a57c1723d0e0d1c902752d11e28e2af3b271e7f518f9296b02da86bc1f53e"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC1363Spender.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC1363Spender.sol",
+      "upstreamSha256": "2c62f958d70d644af912fd43bd6830f168243dd02fa08be37ac6f29e360f9cd0",
+      "sha256": "2c62f958d70d644af912fd43bd6830f168243dd02fa08be37ac6f29e360f9cd0"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC1155.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC1155.sol",
+      "upstreamSha256": "645b7169a60557aa32183effbb8ba1b5513669edb08ff8979235524ab999ce9b",
+      "sha256": "645b7169a60557aa32183effbb8ba1b5513669edb08ff8979235524ab999ce9b"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC1967.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC1967.sol",
+      "upstreamSha256": "dddc79fd955a7dbf954b63358f67be734da61a406bc610a90c91821a2ff84bc6",
+      "sha256": "dddc79fd955a7dbf954b63358f67be734da61a406bc610a90c91821a2ff84bc6"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC1820Implementer.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC1820Implementer.sol",
+      "upstreamSha256": "3ec58349348c9a0ea0c5ff60914c8f57e98599990e70ca962e90ea4d3ba738ba",
+      "sha256": "3ec58349348c9a0ea0c5ff60914c8f57e98599990e70ca962e90ea4d3ba738ba"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC3156.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC3156.sol",
+      "upstreamSha256": "8b96625b7b7a5af8061c62ff4b8a402f350c7dcb363ba3f4379f078b5b54d15d",
+      "sha256": "8b96625b7b7a5af8061c62ff4b8a402f350c7dcb363ba3f4379f078b5b54d15d"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC721.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC721.sol",
+      "upstreamSha256": "e3bcee0ce85a310031fcef279f963e73c12c676a66c5c562ab3945ccf10aecff",
+      "sha256": "e3bcee0ce85a310031fcef279f963e73c12c676a66c5c562ab3945ccf10aecff"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC1363Receiver.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC1363Receiver.sol",
+      "upstreamSha256": "8ab6ab90191ed8130418ba5d92a57ea16ec9ad846d9645ae46edfdad5ba6667e",
+      "sha256": "8ab6ab90191ed8130418ba5d92a57ea16ec9ad846d9645ae46edfdad5ba6667e"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC6372.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC6372.sol",
+      "upstreamSha256": "0f923364f34f89a8a505cb10f6a7932ae6c25f3a4509334ae671ed7f8cb167eb",
+      "sha256": "0f923364f34f89a8a505cb10f6a7932ae6c25f3a4509334ae671ed7f8cb167eb"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC1363.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC1363.sol",
+      "upstreamSha256": "ea03b92979b0d6bd4d4624010a519d7c98ba838de1009f58e3755c94672a495f",
+      "sha256": "ea03b92979b0d6bd4d4624010a519d7c98ba838de1009f58e3755c94672a495f"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC5313.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC5313.sol",
+      "upstreamSha256": "d8967a5a370d478efbe99934867c8a0a9fed60bf2beec201df022a3396fb3ea4",
+      "sha256": "d8967a5a370d478efbe99934867c8a0a9fed60bf2beec201df022a3396fb3ea4"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC5267.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC5267.sol",
+      "upstreamSha256": "72424d3a7a9b7d1c3584d4ec83bf116f30dfaf7180298a32669eefacb55ccb92",
+      "sha256": "72424d3a7a9b7d1c3584d4ec83bf116f30dfaf7180298a32669eefacb55ccb92"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC1155MetadataURI.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC1155MetadataURI.sol",
+      "upstreamSha256": "20b66d2d8f7979aabf5e6c7e5b2129e6b677e2afa83366d7841afec50a3ce2b7",
+      "sha256": "20b66d2d8f7979aabf5e6c7e5b2129e6b677e2afa83366d7841afec50a3ce2b7"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC20Metadata.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC20Metadata.sol",
+      "upstreamSha256": "d47089d8982e5aab41ea4f0417a7becd6fe1ddb95d22ac566bd9648db0d10f2d",
+      "sha256": "d47089d8982e5aab41ea4f0417a7becd6fe1ddb95d22ac566bd9648db0d10f2d"
+    },
+    "vendor/solidity/openzeppelin/interfaces/draft-IERC2612.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/draft-IERC2612.sol",
+      "upstreamSha256": "40e10e34da7daa185d02bad783a448e7c26e69e79fcbba19aacbbd63d416ab84",
+      "sha256": "40e10e34da7daa185d02bad783a448e7c26e69e79fcbba19aacbbd63d416ab84"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC2309.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC2309.sol",
+      "upstreamSha256": "337047b7e7ac314d09bd52693417ce925dd7fef7961fef71d6380bb5c823be53",
+      "sha256": "337047b7e7ac314d09bd52693417ce925dd7fef7961fef71d6380bb5c823be53"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC4626.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC4626.sol",
+      "upstreamSha256": "f02aea42886cfa5696322761f926fd4d0f133eb977da4d019911acc298386c1e",
+      "sha256": "f02aea42886cfa5696322761f926fd4d0f133eb977da4d019911acc298386c1e"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC4906.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC4906.sol",
+      "upstreamSha256": "6b572852b6d6e1db371287a0eb443a724e9005e025025b9c82ebc8804433c0ff",
+      "sha256": "6b572852b6d6e1db371287a0eb443a724e9005e025025b9c82ebc8804433c0ff"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC3156FlashLender.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC3156FlashLender.sol",
+      "upstreamSha256": "e419681ebb729c42fb997da9a7b509c606ca4dceb742acf6adbcc4849a92b9cd",
+      "sha256": "e419681ebb729c42fb997da9a7b509c606ca4dceb742acf6adbcc4849a92b9cd"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC777.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC777.sol",
+      "upstreamSha256": "dd00e795736dfada1af43c164ee91bee1822438237d0635f0d6042e3d01df00a",
+      "sha256": "dd00e795736dfada1af43c164ee91bee1822438237d0635f0d6042e3d01df00a"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC165.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC165.sol",
+      "upstreamSha256": "410e40cd79f1b82bb6bbab95fa4279252cae6e3962b0bff46ab4855f6de91d35",
+      "sha256": "410e40cd79f1b82bb6bbab95fa4279252cae6e3962b0bff46ab4855f6de91d35"
+    },
+    "vendor/solidity/openzeppelin/interfaces/IERC1271.sol": {
+      "upstream": "@openzeppelin/contracts/interfaces/IERC1271.sol",
+      "upstreamSha256": "c981ecaf1c2ec77e3e47f146306d7e99c669b5e733b0adcfd3436c7f6a7a46b6",
+      "sha256": "c981ecaf1c2ec77e3e47f146306d7e99c669b5e733b0adcfd3436c7f6a7a46b6"
+    },
+    "vendor/solidity/uniswap-v2-core/UniswapV2Factory.sol": {
+      "upstream": "@uniswap/v2-core/contracts/UniswapV2Factory.sol",
+      "upstreamSha256": "e0cef3e874a68cbcc5986451b1fec180ba5ff5699f27a256b7c10fafefe36b99",
+      "sha256": "e0cef3e874a68cbcc5986451b1fec180ba5ff5699f27a256b7c10fafefe36b99"
+    },
+    "vendor/solidity/uniswap-v2-core/UniswapV2ERC20.sol": {
+      "upstream": "@uniswap/v2-core/contracts/UniswapV2ERC20.sol",
+      "upstreamSha256": "b8ce88929ce2c93b8fce385f8d57701b1a64c600a95317ea5f3561d36297be32",
+      "sha256": "b8ce88929ce2c93b8fce385f8d57701b1a64c600a95317ea5f3561d36297be32"
+    },
+    "vendor/solidity/uniswap-v2-core/UniswapV2Pair.sol": {
+      "upstream": "@uniswap/v2-core/contracts/UniswapV2Pair.sol",
+      "upstreamSha256": "43a5421b31415868367b62bfa161ca10bcee03778873faad905f5a3e2cce9cbd",
+      "sha256": "5e6ea3b6b56eb84ee2c727dc2218be68257f93647061d6c55116f8da91761b45"
+    },
+    "vendor/solidity/uniswap-v2-core/test/ERC20.sol": {
+      "upstream": "@uniswap/v2-core/contracts/test/ERC20.sol",
+      "upstreamSha256": "e11b370820584a64b1ef5b498a348349f311787ba77b3b0a632abc1110dcc7e2",
+      "sha256": "e11b370820584a64b1ef5b498a348349f311787ba77b3b0a632abc1110dcc7e2"
+    },
+    "vendor/solidity/uniswap-v2-core/libraries/SafeMath.sol": {
+      "upstream": "@uniswap/v2-core/contracts/libraries/SafeMath.sol",
+      "upstreamSha256": "4b1c95ff75de7342e0fadff58064820a4eb7c2fcb422a75b4994980ce8e216ae",
+      "sha256": "4b1c95ff75de7342e0fadff58064820a4eb7c2fcb422a75b4994980ce8e216ae"
+    },
+    "vendor/solidity/uniswap-v2-core/libraries/UQ112x112.sol": {
+      "upstream": "@uniswap/v2-core/contracts/libraries/UQ112x112.sol",
+      "upstreamSha256": "6633b57b0723b1d72e08cc3e8b29f0af838294e59863b6cdcce95a141ed02cdb",
+      "sha256": "6633b57b0723b1d72e08cc3e8b29f0af838294e59863b6cdcce95a141ed02cdb"
+    },
+    "vendor/solidity/uniswap-v2-core/libraries/Math.sol": {
+      "upstream": "@uniswap/v2-core/contracts/libraries/Math.sol",
+      "upstreamSha256": "e4a9d451964a0689be2b244322a353de143ca4248d8736d91aca4ffadca4325f",
+      "sha256": "e4a9d451964a0689be2b244322a353de143ca4248d8736d91aca4ffadca4325f"
+    },
+    "vendor/solidity/uniswap-v2-core/interfaces/IERC20.sol": {
+      "upstream": "@uniswap/v2-core/contracts/interfaces/IERC20.sol",
+      "upstreamSha256": "2b63f199f838028184efefbcfd6cf2b9192624c3dae5dc1116ecbb15c36a67e8",
+      "sha256": "2b63f199f838028184efefbcfd6cf2b9192624c3dae5dc1116ecbb15c36a67e8"
+    },
+    "vendor/solidity/uniswap-v2-core/interfaces/IUniswapV2ERC20.sol": {
+      "upstream": "@uniswap/v2-core/contracts/interfaces/IUniswapV2ERC20.sol",
+      "upstreamSha256": "7948069aea398dec4b7e771ffc749a24fdce3a64673a1b14deae960e7a54c603",
+      "sha256": "7948069aea398dec4b7e771ffc749a24fdce3a64673a1b14deae960e7a54c603"
+    },
+    "vendor/solidity/uniswap-v2-core/interfaces/IUniswapV2Factory.sol": {
+      "upstream": "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
+      "upstreamSha256": "51d056199e3f5e41cb1a9f11ce581aa3e190cc982db5771ffeef8d8d1f962a0d",
+      "sha256": "51d056199e3f5e41cb1a9f11ce581aa3e190cc982db5771ffeef8d8d1f962a0d"
+    },
+    "vendor/solidity/uniswap-v2-core/interfaces/IUniswapV2Pair.sol": {
+      "upstream": "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
+      "upstreamSha256": "29c75e69ce173ff8b498584700fef76bc81498c1d98120e2877a1439f0c31b5a",
+      "sha256": "29c75e69ce173ff8b498584700fef76bc81498c1d98120e2877a1439f0c31b5a"
+    },
+    "vendor/solidity/uniswap-v2-core/interfaces/IUniswapV2Callee.sol": {
+      "upstream": "@uniswap/v2-core/contracts/interfaces/IUniswapV2Callee.sol",
+      "upstreamSha256": "ecfa434d468bb1888124d8c34b0b8483f4ea1e5cd63f0874c8b28aa4305c1dbc",
+      "sha256": "ecfa434d468bb1888124d8c34b0b8483f4ea1e5cd63f0874c8b28aa4305c1dbc"
+    },
+    "vendor/solidity/uniswap-v2-periphery/UniswapV2Migrator.sol": {
+      "upstream": "@uniswap/v2-periphery/contracts/UniswapV2Migrator.sol",
+      "upstreamSha256": "b1bf0327cec8556c602174e20f067782c71c051ddb6f45f00459a062402ca374",
+      "sha256": "4d2c9b7e7041312d4bd53d0abaa8a73f6d37c5a7f1485e5ca7e2e483aa088543"
+    },
+    "vendor/solidity/uniswap-v2-periphery/UniswapV2Router01.sol": {
+      "upstream": "@uniswap/v2-periphery/contracts/UniswapV2Router01.sol",
+      "upstreamSha256": "da25cb106f822d04eb126249b2a08f986dd579920f790560ef56ca9ed8879786",
+      "sha256": "4f8f3d300150ad6c75ffcedd50ee4d600d7022481e250c3773dae6252f4c9563"
+    },
+    "vendor/solidity/uniswap-v2-periphery/UniswapV2Router02.sol": {
+      "upstream": "@uniswap/v2-periphery/contracts/UniswapV2Router02.sol",
+      "upstreamSha256": "acabe6d6c9c275aa5c27d8ed59b3d23d21616523071043e89eea7bca474babb8",
+      "sha256": "b529fd276798e49658fbcbd50fc96c4139efbbfad9987f0505771e21717020fa"
+    },
+    "vendor/solidity/uniswap-v2-periphery/test/WETH9.sol": {
+      "upstream": "@uniswap/v2-periphery/contracts/test/WETH9.sol",
+      "upstreamSha256": "33f13565b207188485030aa20fd1f38d52d8c455cc64720560fb38149dcb4137",
+      "sha256": "33f13565b207188485030aa20fd1f38d52d8c455cc64720560fb38149dcb4137"
+    },
+    "vendor/solidity/uniswap-v2-periphery/test/ERC20.sol": {
+      "upstream": "@uniswap/v2-periphery/contracts/test/ERC20.sol",
+      "upstreamSha256": "16ace9cf263a8918972fe942217ec6854dc8251fb28420df16be7be53fb0fb88",
+      "sha256": "16ace9cf263a8918972fe942217ec6854dc8251fb28420df16be7be53fb0fb88"
+    },
+    "vendor/solidity/uniswap-v2-periphery/test/DeflatingERC20.sol": {
+      "upstream": "@uniswap/v2-periphery/contracts/test/DeflatingERC20.sol",
+      "upstreamSha256": "d9768f5ce9f19aeda89356a272b560ae5b9447df3200aceaa59dbb9ed8a1c8bc",
+      "sha256": "d9768f5ce9f19aeda89356a272b560ae5b9447df3200aceaa59dbb9ed8a1c8bc"
+    },
+    "vendor/solidity/uniswap-v2-periphery/test/RouterEventEmitter.sol": {
+      "upstream": "@uniswap/v2-periphery/contracts/test/RouterEventEmitter.sol",
+      "upstreamSha256": "82aaec8037248d47c013c33a491df044a4e34eef87491b3b94c24a8fd135ddda",
+      "sha256": "82aaec8037248d47c013c33a491df044a4e34eef87491b3b94c24a8fd135ddda"
+    },
+    "vendor/solidity/uniswap-v2-periphery/libraries/UniswapV2OracleLibrary.sol": {
+      "upstream": "@uniswap/v2-periphery/contracts/libraries/UniswapV2OracleLibrary.sol",
+      "upstreamSha256": "508b544096f9d916bef314a517a1f3573243272f34d8c4fbacbc7f256523e74f",
+      "sha256": "61e4a902ef55eeedbc5c69c0f1284046b7f708356b251a752487f4d3f86b2d99"
+    },
+    "vendor/solidity/uniswap-v2-periphery/libraries/UniswapV2Library.sol": {
+      "upstream": "@uniswap/v2-periphery/contracts/libraries/UniswapV2Library.sol",
+      "upstreamSha256": "4f83e9334f833568fa47b36e9ceca435f6c2962760a0596b043c4e538d0fd9f2",
+      "sha256": "cacfda46ae7871eefaf712b69544f4b7bc5e1a7213ae0adb292dc75018205b42"
+    },
+    "vendor/solidity/uniswap-v2-periphery/libraries/SafeMath.sol": {
+      "upstream": "@uniswap/v2-periphery/contracts/libraries/SafeMath.sol",
+      "upstreamSha256": "39e5b4c0bc19b72fa59c2d2177ba5ed6cfadcd76f3f804563011e579367530fb",
+      "sha256": "39e5b4c0bc19b72fa59c2d2177ba5ed6cfadcd76f3f804563011e579367530fb"
+    },
+    "vendor/solidity/uniswap-v2-periphery/examples/ExampleFlashSwap.sol": {
+      "upstream": "@uniswap/v2-periphery/contracts/examples/ExampleFlashSwap.sol",
+      "upstreamSha256": "845643504669ff07f365c3465fefaf23d591733f127e46bd6c6174eebdc3f7d9",
+      "sha256": "0d31eef6fb76beebc170c992ef435cfc0979735552566e8d1019e345dfb44208"
+    },
+    "vendor/solidity/uniswap-v2-periphery/examples/ExampleOracleSimple.sol": {
+      "upstream": "@uniswap/v2-periphery/contracts/examples/ExampleOracleSimple.sol",
+      "upstreamSha256": "ac597bb691036258e9416f8a8b292e318b80e3b7628e5e0de9222848038fd518",
+      "sha256": "d14a0823b62587da8c29f1e2577d67265da8de15f7d7a903e5f9b792ef02aec0"
+    },
+    "vendor/solidity/uniswap-v2-periphery/examples/ExampleSwapToPrice.sol": {
+      "upstream": "@uniswap/v2-periphery/contracts/examples/ExampleSwapToPrice.sol",
+      "upstreamSha256": "0a5bb31ee83f5d1d8147119b8f3f49286a3c773cdcef9f424b5444080cbb948c",
+      "sha256": "42da84b01c63471aef2b1c515030d5de7f316bb65ef7453339d7dd1b25757bfe"
+    },
+    "vendor/solidity/uniswap-v2-periphery/examples/ExampleSlidingWindowOracle.sol": {
+      "upstream": "@uniswap/v2-periphery/contracts/examples/ExampleSlidingWindowOracle.sol",
+      "upstreamSha256": "a84405c81d1fbd772abd51d51839154c3a640bee730347f484fae8139edad500",
+      "sha256": "aaf1a2c7db939f6348a674b7eff2d6c40b3ed8822fa1f6130c0dff31834a9b00"
+    },
+    "vendor/solidity/uniswap-v2-periphery/interfaces/IERC20.sol": {
+      "upstream": "@uniswap/v2-periphery/contracts/interfaces/IERC20.sol",
+      "upstreamSha256": "2b63f199f838028184efefbcfd6cf2b9192624c3dae5dc1116ecbb15c36a67e8",
+      "sha256": "2b63f199f838028184efefbcfd6cf2b9192624c3dae5dc1116ecbb15c36a67e8"
+    },
+    "vendor/solidity/uniswap-v2-periphery/interfaces/IUniswapV2Router01.sol": {
+      "upstream": "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router01.sol",
+      "upstreamSha256": "0439ffe0fd4a5e1f4e22d71ddbda76d63d61679947d158cba4ee0a1da60cf663",
+      "sha256": "0439ffe0fd4a5e1f4e22d71ddbda76d63d61679947d158cba4ee0a1da60cf663"
+    },
+    "vendor/solidity/uniswap-v2-periphery/interfaces/IUniswapV2Router02.sol": {
+      "upstream": "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol",
+      "upstreamSha256": "a2900701961cb0b6152fc073856b972564f7c798797a4a044e83d2ab8f0e8d38",
+      "sha256": "a2900701961cb0b6152fc073856b972564f7c798797a4a044e83d2ab8f0e8d38"
+    },
+    "vendor/solidity/uniswap-v2-periphery/interfaces/IWETH.sol": {
+      "upstream": "@uniswap/v2-periphery/contracts/interfaces/IWETH.sol",
+      "upstreamSha256": "60760053849b916b72386fef1126ab69c7482c2aa6b5fb836368eff42905cb30",
+      "sha256": "60760053849b916b72386fef1126ab69c7482c2aa6b5fb836368eff42905cb30"
+    },
+    "vendor/solidity/uniswap-v2-periphery/interfaces/IUniswapV2Migrator.sol": {
+      "upstream": "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Migrator.sol",
+      "upstreamSha256": "e020b26f5d9c4162340fcbb42bf6ea5febfc3ee68f33aa25e527cd43e8de0483",
+      "sha256": "e020b26f5d9c4162340fcbb42bf6ea5febfc3ee68f33aa25e527cd43e8de0483"
+    },
+    "vendor/solidity/uniswap-v2-periphery/interfaces/V1/IUniswapV1Factory.sol": {
+      "upstream": "@uniswap/v2-periphery/contracts/interfaces/V1/IUniswapV1Factory.sol",
+      "upstreamSha256": "757faaa23cac0f415640c16c009e92458271ece8876c0b739f2a3bbad6338aee",
+      "sha256": "757faaa23cac0f415640c16c009e92458271ece8876c0b739f2a3bbad6338aee"
+    },
+    "vendor/solidity/uniswap-v2-periphery/interfaces/V1/IUniswapV1Exchange.sol": {
+      "upstream": "@uniswap/v2-periphery/contracts/interfaces/V1/IUniswapV1Exchange.sol",
+      "upstreamSha256": "af0f040756cffdad159024068160e3d29974963eea113bf79debe6e0d9bfc5f4",
+      "sha256": "af0f040756cffdad159024068160e3d29974963eea113bf79debe6e0d9bfc5f4"
+    },
+    "vendor/solidity/uniswap-lib/libraries/SafeERC20Namer.sol": {
+      "upstream": "@uniswap/lib/contracts/libraries/SafeERC20Namer.sol",
+      "upstreamSha256": "edc85c9e4a9308e5b51a5f21fefb0b42e34344bee0eef87c3feecc3d785d897d",
+      "sha256": "edc85c9e4a9308e5b51a5f21fefb0b42e34344bee0eef87c3feecc3d785d897d"
+    },
+    "vendor/solidity/uniswap-lib/libraries/AddressStringUtil.sol": {
+      "upstream": "@uniswap/lib/contracts/libraries/AddressStringUtil.sol",
+      "upstreamSha256": "a8a155da8eff4bd9cae18a95eedb2efa08b5b27bf41f8d8e2e765c17d94e1490",
+      "sha256": "a8a155da8eff4bd9cae18a95eedb2efa08b5b27bf41f8d8e2e765c17d94e1490"
+    },
+    "vendor/solidity/uniswap-lib/libraries/FixedPoint.sol": {
+      "upstream": "@uniswap/lib/contracts/libraries/FixedPoint.sol",
+      "upstreamSha256": "6b2c2e3f04aa04dabfeaa7911c94d1fdf0d045ebb59d57617410b9efebf67823",
+      "sha256": "6b2c2e3f04aa04dabfeaa7911c94d1fdf0d045ebb59d57617410b9efebf67823"
+    },
+    "vendor/solidity/uniswap-lib/libraries/PairNamer.sol": {
+      "upstream": "@uniswap/lib/contracts/libraries/PairNamer.sol",
+      "upstreamSha256": "2534f5f04b15d33c5922bc889b743ba91b9f6fa3c706e64510bc495784d90930",
+      "sha256": "2534f5f04b15d33c5922bc889b743ba91b9f6fa3c706e64510bc495784d90930"
+    },
+    "vendor/solidity/uniswap-lib/libraries/Babylonian.sol": {
+      "upstream": "@uniswap/lib/contracts/libraries/Babylonian.sol",
+      "upstreamSha256": "ef7ba527867fa2718551e2397f8dc5c5161fc2439d470d2467115b2184eb7ad5",
+      "sha256": "ef7ba527867fa2718551e2397f8dc5c5161fc2439d470d2467115b2184eb7ad5"
+    },
+    "vendor/solidity/uniswap-lib/libraries/TransferHelper.sol": {
+      "upstream": "@uniswap/lib/contracts/libraries/TransferHelper.sol",
+      "upstreamSha256": "72b232bc3d253ccfcf8299dac036efe549fad3ae45b1e0be813745c6da635281",
+      "sha256": "72b232bc3d253ccfcf8299dac036efe549fad3ae45b1e0be813745c6da635281"
+    }
+  },
+  "artifacts": {
+    "vendor/artifacts/aave-v3/ACLManager.json": {
+      "upstream": "@aave/core-v3/artifacts/contracts/protocol/configuration/ACLManager.sol/ACLManager.json",
+      "sha256": "5e47cbcfcaa6267c2ac47327381d458a55041001c47fde74110001827c66489c"
+    },
+    "vendor/artifacts/aave-v3/AToken.json": {
+      "upstream": "@aave/core-v3/artifacts/contracts/protocol/tokenization/AToken.sol/AToken.json",
+      "sha256": "b9f55205c68995ce3a4ae2cc7915615b835ff53c3ea60cd32880d96c9a5d6ea5"
+    },
+    "vendor/artifacts/aave-v3/AaveOracle.json": {
+      "upstream": "@aave/core-v3/artifacts/contracts/misc/AaveOracle.sol/AaveOracle.json",
+      "sha256": "39b8100ef208ca24df964a127af4c5f9212ed4c376da17174057d41cdc4f2b6d"
+    },
+    "vendor/artifacts/aave-v3/AaveProtocolDataProvider.json": {
+      "upstream": "@aave/core-v3/artifacts/contracts/misc/AaveProtocolDataProvider.sol/AaveProtocolDataProvider.json",
+      "sha256": "9c6a0caf96c4326a34ebd91af5e794c789b9933d1dc7b6553694cb25c412fed8"
+    },
+    "vendor/artifacts/aave-v3/BorrowLogic.json": {
+      "upstream": "@aave/core-v3/artifacts/contracts/protocol/libraries/logic/BorrowLogic.sol/BorrowLogic.json",
+      "sha256": "ad29be77a9d8db17425b72dd672e087263b2dde213523635480309b7e0590cd9"
+    },
+    "vendor/artifacts/aave-v3/BridgeLogic.json": {
+      "upstream": "@aave/core-v3/artifacts/contracts/protocol/libraries/logic/BridgeLogic.sol/BridgeLogic.json",
+      "sha256": "e7369ce4549601d411477dae3c58c75157bf88e387385c4877d8e6031c4eed60"
+    },
+    "vendor/artifacts/aave-v3/ConfiguratorLogic.json": {
+      "upstream": "@aave/core-v3/artifacts/contracts/protocol/libraries/logic/ConfiguratorLogic.sol/ConfiguratorLogic.json",
+      "sha256": "65285e9649afe9781a1a4514beb0ceb9ea0b838d66639bed05e5a1f3176536d8"
+    },
+    "vendor/artifacts/aave-v3/DefaultReserveInterestRateStrategy.json": {
+      "upstream": "@aave/core-v3/artifacts/contracts/protocol/pool/DefaultReserveInterestRateStrategy.sol/DefaultReserveInterestRateStrategy.json",
+      "sha256": "42e346d7ea3cb1638cf0766a25063830fe42de978e685cd5fc76e16cc74d35e4"
+    },
+    "vendor/artifacts/aave-v3/EModeLogic.json": {
+      "upstream": "@aave/core-v3/artifacts/contracts/protocol/libraries/logic/EModeLogic.sol/EModeLogic.json",
+      "sha256": "a3d2cbd116ee1e48a1789673b1ee21cc19d168d080436c4372f8728c5a4785e3"
+    },
+    "vendor/artifacts/aave-v3/FlashLoanLogic.json": {
+      "upstream": "@aave/core-v3/artifacts/contracts/protocol/libraries/logic/FlashLoanLogic.sol/FlashLoanLogic.json",
+      "sha256": "3df42b35d69bfa4a7c3fa9a22654a7032b33cca8642dec8f32a6c969cde5faab"
+    },
+    "vendor/artifacts/aave-v3/LiquidationLogic.json": {
+      "upstream": "@aave/core-v3/artifacts/contracts/protocol/libraries/logic/LiquidationLogic.sol/LiquidationLogic.json",
+      "sha256": "a0b8d4e370a50851fce5565bd849c80a2b8fe93e22ef851fcfaf331e0dc7a439"
+    },
+    "vendor/artifacts/aave-v3/Pool.json": {
+      "upstream": "@aave/core-v3/artifacts/contracts/protocol/pool/Pool.sol/Pool.json",
+      "sha256": "a6dc3c40c52757deafa47f2d45d3a19b111a2ac1ca19b062cf39af558efe41c0"
+    },
+    "vendor/artifacts/aave-v3/PoolAddressesProvider.json": {
+      "upstream": "@aave/core-v3/artifacts/contracts/protocol/configuration/PoolAddressesProvider.sol/PoolAddressesProvider.json",
+      "sha256": "94062e07572d39fd9c697cde904a7c29ef9fabbac4c15c4d6f8c33b88f888085"
+    },
+    "vendor/artifacts/aave-v3/PoolConfigurator.json": {
+      "upstream": "@aave/core-v3/artifacts/contracts/protocol/pool/PoolConfigurator.sol/PoolConfigurator.json",
+      "sha256": "7d9163867ac1d6851ee4fcde17f8a5777d537835ad9d4db1b5f88258f15ccd83"
+    },
+    "vendor/artifacts/aave-v3/PoolLogic.json": {
+      "upstream": "@aave/core-v3/artifacts/contracts/protocol/libraries/logic/PoolLogic.sol/PoolLogic.json",
+      "sha256": "165a6225c076cd1f6179a3ff07d5a96ea433e683be4018c568c90ee7dbb13650"
+    },
+    "vendor/artifacts/aave-v3/PriceOracle.json": {
+      "upstream": "@aave/core-v3/artifacts/contracts/mocks/oracle/PriceOracle.sol/PriceOracle.json",
+      "sha256": "be366c8d907f7a9bbbc21b351864f8ec19db2303d2991b82d2b635cb60a52657"
+    },
+    "vendor/artifacts/aave-v3/StableDebtToken.json": {
+      "upstream": "@aave/core-v3/artifacts/contracts/protocol/tokenization/StableDebtToken.sol/StableDebtToken.json",
+      "sha256": "02d7c367028f17760a6b366a15b696b58d631fbd47e38203f7debffb866a18c1"
+    },
+    "vendor/artifacts/aave-v3/SupplyLogic.json": {
+      "upstream": "@aave/core-v3/artifacts/contracts/protocol/libraries/logic/SupplyLogic.sol/SupplyLogic.json",
+      "sha256": "eeb59192da24f4d5a0fb74f6f721990485c2edf011a1b3df51606b76592ca1b1"
+    },
+    "vendor/artifacts/aave-v3/VariableDebtToken.json": {
+      "upstream": "@aave/core-v3/artifacts/contracts/protocol/tokenization/VariableDebtToken.sol/VariableDebtToken.json",
+      "sha256": "18857b088478c206a95e25cd107d2382f73a8426018249432eee55091134e0e8"
+    },
+    "vendor/artifacts/uniswap-v2/UniswapV2Factory.json": {
+      "upstream": "@uniswap/v2-core/build/UniswapV2Factory.json",
+      "sha256": "f24d5e7d6694e4714175df58d9765d2255dab5012990f735bccf3195913da2fb",
+      "upstreamSha256": "7e666780d3ddf601a17c97dcc6a414dd77f5eae13fb37fce7e0bd282f4f61406",
+      "origin": "compiled from local vendor sources",
+      "compiler": "0.5.16+commit.9c3226ce.Emscripten.clang"
+    },
+    "vendor/artifacts/uniswap-v2/UniswapV2Pair.json": {
+      "upstream": "@uniswap/v2-core/build/UniswapV2Pair.json",
+      "sha256": "37b3bea49f6d81da2e65e76b695a77b28d99308b22af4b8939c8e85192d3c22b",
+      "upstreamSha256": "bb00cb1d64deea4159731b5957eeb8354531a110fb9120b9ef14edbc950e0736",
+      "origin": "compiled from local vendor sources",
+      "compiler": "0.5.16+commit.9c3226ce.Emscripten.clang"
+    },
+    "vendor/artifacts/uniswap-v2/UniswapV2Router02.json": {
+      "upstream": "@uniswap/v2-periphery/build/UniswapV2Router02.json",
+      "sha256": "50d7141059443f0eded3196f2da06c6894916b440b2576339dc55b69bbac6b1b",
+      "upstreamSha256": "b5d849090faf5255b82bddb2a8a51ad796599fa31bb7a3aa0e0db75226031aaa",
+      "origin": "compiled from local vendor sources",
+      "compiler": "0.6.6+commit.6c089d02.Emscripten.clang"
+    },
+    "vendor/artifacts/uniswap-v2/WETH9.json": {
+      "upstream": "@uniswap/v2-periphery/build/WETH9.json",
+      "sha256": "aefcc78bdc9163495e5e9b4a7f97d3f695612ed3d0c4e587c2c1c4fb0d75b25c",
+      "upstreamSha256": "ba02494a1f4d2ca3873f74969d4ff57fc885f37b856486605afa214e4155d18d",
+      "origin": "compiled from local vendor sources",
+      "compiler": "0.6.6+commit.6c089d02.Emscripten.clang"
+    }
+  },
+  "licenses": {
+    "vendor/licenses/aave-v3/LICENSE.md": {
+      "sha256": "9783bb0e787eb2f807b87c632b038ac224d1525f801dcbc50ad93e041b1161fa"
+    },
+    "vendor/licenses/openzeppelin/LICENSE": {
+      "sha256": "0e05b4f45c8769ece14ba2d202bf6f5ed7132600b642c981266f7255e0187ea3"
+    },
+    "vendor/licenses/uniswap-lib/LICENSE": {
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    "vendor/licenses/uniswap-v2-core/LICENSE": {
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    "vendor/licenses/uniswap-v2-periphery/LICENSE": {
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    }
+  },
+  "uniswapBuild": {
+    "coreCompiler": "0.5.16+commit.9c3226ce.Emscripten.clang",
+    "peripheryCompiler": "0.6.6+commit.6c089d02.Emscripten.clang",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evmVersion": "istanbul",
+    "pairInitCodeHash": "0x059c41fac721c6275003eff12f68c1b264f5edcc4dacdc321e2c91013a8380b8",
+    "swapFeeNumerator": 100,
+    "swapFeeDenominator": 1000,
+    "inputMultiplier": 900,
+    "sources": {
+      "vendor/solidity/uniswap-v2-core/UniswapV2Factory.sol": "e0cef3e874a68cbcc5986451b1fec180ba5ff5699f27a256b7c10fafefe36b99",
+      "vendor/solidity/uniswap-v2-core/interfaces/IUniswapV2Factory.sol": "51d056199e3f5e41cb1a9f11ce581aa3e190cc982db5771ffeef8d8d1f962a0d",
+      "vendor/solidity/uniswap-v2-core/UniswapV2Pair.sol": "5e6ea3b6b56eb84ee2c727dc2218be68257f93647061d6c55116f8da91761b45",
+      "vendor/solidity/uniswap-v2-core/interfaces/IUniswapV2Pair.sol": "29c75e69ce173ff8b498584700fef76bc81498c1d98120e2877a1439f0c31b5a",
+      "vendor/solidity/uniswap-v2-core/UniswapV2ERC20.sol": "b8ce88929ce2c93b8fce385f8d57701b1a64c600a95317ea5f3561d36297be32",
+      "vendor/solidity/uniswap-v2-core/interfaces/IUniswapV2ERC20.sol": "7948069aea398dec4b7e771ffc749a24fdce3a64673a1b14deae960e7a54c603",
+      "vendor/solidity/uniswap-v2-core/libraries/SafeMath.sol": "4b1c95ff75de7342e0fadff58064820a4eb7c2fcb422a75b4994980ce8e216ae",
+      "vendor/solidity/uniswap-v2-core/libraries/Math.sol": "e4a9d451964a0689be2b244322a353de143ca4248d8736d91aca4ffadca4325f",
+      "vendor/solidity/uniswap-v2-core/libraries/UQ112x112.sol": "6633b57b0723b1d72e08cc3e8b29f0af838294e59863b6cdcce95a141ed02cdb",
+      "vendor/solidity/uniswap-v2-core/interfaces/IERC20.sol": "2b63f199f838028184efefbcfd6cf2b9192624c3dae5dc1116ecbb15c36a67e8",
+      "vendor/solidity/uniswap-v2-core/interfaces/IUniswapV2Callee.sol": "ecfa434d468bb1888124d8c34b0b8483f4ea1e5cd63f0874c8b28aa4305c1dbc",
+      "vendor/solidity/uniswap-v2-periphery/UniswapV2Router02.sol": "b529fd276798e49658fbcbd50fc96c4139efbbfad9987f0505771e21717020fa",
+      "vendor/solidity/uniswap-lib/libraries/TransferHelper.sol": "72b232bc3d253ccfcf8299dac036efe549fad3ae45b1e0be813745c6da635281",
+      "vendor/solidity/uniswap-v2-periphery/interfaces/IUniswapV2Router02.sol": "a2900701961cb0b6152fc073856b972564f7c798797a4a044e83d2ab8f0e8d38",
+      "vendor/solidity/uniswap-v2-periphery/interfaces/IUniswapV2Router01.sol": "0439ffe0fd4a5e1f4e22d71ddbda76d63d61679947d158cba4ee0a1da60cf663",
+      "vendor/solidity/uniswap-v2-periphery/libraries/UniswapV2Library.sol": "cacfda46ae7871eefaf712b69544f4b7bc5e1a7213ae0adb292dc75018205b42",
+      "vendor/solidity/uniswap-v2-periphery/libraries/SafeMath.sol": "39e5b4c0bc19b72fa59c2d2177ba5ed6cfadcd76f3f804563011e579367530fb",
+      "vendor/solidity/uniswap-v2-periphery/interfaces/IERC20.sol": "2b63f199f838028184efefbcfd6cf2b9192624c3dae5dc1116ecbb15c36a67e8",
+      "vendor/solidity/uniswap-v2-periphery/interfaces/IWETH.sol": "60760053849b916b72386fef1126ab69c7482c2aa6b5fb836368eff42905cb30",
+      "vendor/solidity/uniswap-v2-periphery/test/WETH9.sol": "33f13565b207188485030aa20fd1f38d52d8c455cc64720560fb38149dcb4137"
+    }
+  }
+}

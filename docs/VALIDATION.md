@@ -1,5 +1,7 @@
 # Kết quả kiểm chứng ngày 25/10/2026
 
+> Cập nhật 27/10/2026: đã build Uniswap từ source local với phí swap **5%**, tự cập nhật Pair init code hash, redeploy lên Geth và kiểm tra swap/flash loan thành công. Xem `fee-5-validation.json` cho địa chỉ Pair, hash runtime bytecode, báo giá theo công thức 5% và receipt giao dịch mới. Phần kết quả 25/10 dưới đây là bản ghi lịch sử của deployment phí 0,3%, không phải deployment hiện tại. Phí flash loan Aave vẫn là 0,05%.
+
 ## Môi trường
 
 - macOS arm64; Node.js 26.10.0.
